@@ -1813,6 +1813,20 @@ ol {
 	transition: all, 0.3s;
 }
 
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    body {
+        padding-top: 120px;
+    }
+
 /*---------------------
   Doctor
 -----------------------*/
@@ -1834,7 +1848,7 @@ ol {
 }
 
 .doctor__item__pic img {
-	height: 470px;
+	height: 500px;
 	width: 470px;
 	border-radius: 50%;
 	border: 10px solid #ffffff;

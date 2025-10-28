@@ -48,6 +48,35 @@
             margin: 10px 0;
             border-left: 4px solid #d63031;
         }
+        .card-heading.active a {
+            color: #3498db;
+            font-weight: 600;
+        }
+        .service-icon {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+            color: #3498db;
+        }
+        /* Estilos para las flechas del acordeón */
+        .card-heading a {
+            position: relative;
+            display: block;
+            padding-right: 30px;
+        }
+        .card-heading a::after {
+            content: '\f105'; /* Flecha hacia la derecha de Font Awesome */
+            font-family: 'FontAwesome';
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .card-heading.active a::after {
+            content: '\f101'; /* Flecha hacia la derecha cuando está activo */
+            transform: translateY(-50%) rotate(0deg);
+        }
     </style>
 </head>
 
@@ -168,8 +197,8 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="services__details__title">
-                                    <span>HEMATOLOGÍA</span>
-                                    <h3>Hemograma Completo</h3>
+                                    <span>LABORATORIO</span>
+                                    <h3>Laboratorio Clínico</h3>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -181,71 +210,71 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <h3>S/ 25.00</h3>
+                                    <h3>Consultar</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="services__details__pic">
-                            <img src="https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop" alt="Analizador Hematológico Automatizado">
+                            <img src="https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop" alt="Laboratorio Clínico">
                         </div>
                         <div class="services__details__text">
-                            <p>El hemograma completo es un análisis fundamental que evalúa los tres tipos principales de células sanguíneas: glóbulos rojos (eritrocitos), glóbulos blancos (leucocitos) y plaquetas (trombocitos). Este estudio proporciona información crucial sobre el estado general de salud y ayuda en el diagnóstico de anemias, infecciones, trastornos de coagulación y enfermedades hematológicas.</p>
-                            <p>Realizado con analizadores hematológicos automatizados de última generación, garantizamos resultados precisos en menos de 24 horas.</p>
+                            <p>Servicios completos de laboratorio clínico con análisis hematológicos, bioquímicos, microbiología y más. Contamos con tecnología de última generación para resultados precisos y confiables.</p>
+                            <p>Realizamos más de 100 tipos de análisis diferentes con equipos automatizados y personal especializado.</p>
                         </div>
 
                         <div class="service-details">
                             <h4>Detalles del Servicio</h4>
-                            <p><strong>Equipo utilizado:</strong> Analizador Hematológico Automatizado Sysmex XN-1000</p>
-                            <p><strong>Tiempo de entrega:</strong> 4-6 horas</p>
-                            <p><strong>Preparación:</strong> Ayuno de 8 horas recomendado</p>
-                            <p><strong>Muestra requerida:</strong> 3 ml de sangre venosa en tubo con EDTA</p>
+                            <p><strong>Especialistas:</strong> Bioquímicos, Tecnólogos Médicos</p>
+                            <p><strong>Tiempo de entrega:</strong> Variable según el estudio (4-48 horas)</p>
+                            <p><strong>Preparación:</strong> Depende del análisis (ayuno, etc.)</p>
+                            <p><strong>Muestra requerida:</strong> Sangre, orina, heces, etc.</p>
                         </div>
 
                         <div class="equipment-gallery">
-                            <h4>Nuestros Equipos de Hematología</h4>
+                            <h4>Nuestros Equipos de Laboratorio</h4>
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="services__details__item__pic">
-                                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop" alt="Microscopio para Hematología">
-                                        <p>Microscopio para diferencial leucocitario</p>
+                                        <img src="https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop" alt="Analizadores Automatizados">
+                                        <p>Analizadores hematológicos automatizados</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="services__details__item__pic">
-                                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop" alt="Centrífuga para Hematología">
-                                        <p>Centrífuga para procesamiento de muestras</p>
+                                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop" alt="Microscopios">
+                                        <p>Microscopios de alta resolución</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="services__details__item__pic">
-                                        <img src="https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop" alt="Analizador Automatizado">
-                                        <p>Analizador hematológico automatizado</p>
+                                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop" alt="Centrífugas">
+                                        <p>Centrífugas y equipos de procesamiento</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="services__details__desc">
-                            <p>Nuestro laboratorio cuenta con tecnología de vanguardia para garantizar la máxima precisión en todos los análisis hematológicos. Los equipos son calibrados diariamente y sometidos a estrictos controles de calidad.</p>
+                            <p>Nuestro laboratorio cuenta con tecnología de vanguardia y personal altamente calificado para garantizar la máxima precisión en todos los análisis. Los equipos son calibrados diariamente y sometidos a estrictos controles de calidad.</p>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <ul class="services__details__feature">
-                                        <li><i class="fa fa-check-circle"></i> Resultados en 4-6 horas</li>
-                                        <li><i class="fa fa-check-circle"></i> Equipos automatizados Sysmex</li>
-                                        <li><i class="fa fa-check-circle"></i> Hematólogos especializados</li>
+                                        <li><i class="fa fa-check-circle"></i> Más de 100 análisis disponibles</li>
+                                        <li><i class="fa fa-check-circle"></i> Equipos automatizados</li>
+                                        <li><i class="fa fa-check-circle"></i> Personal especializado</li>
                                         <li><i class="fa fa-check-circle"></i> Control de calidad diario</li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <ul class="services__details__feature">
                                         <li><i class="fa fa-check-circle"></i> Toma de muestra indolora</li>
-                                        <li><i class="fa fa-check-circle"></i> Sin cita previa necesaria</li>
+                                        <li><i class="fa fa-check-circle"></i> Resultados confiables</li>
                                         <li><i class="fa fa-check-circle"></i> Precios accesibles</li>
                                         <li><i class="fa fa-check-circle"></i> Atención personalizada</li>
                                     </ul>
                                 </div>
                             </div>
-                            <p>Para realizar este examen se recomienda acudir en horario de 7:00 am a 5:00 pm de lunes a sábado. No se requiere ayuno prolongado para la mayoría de los estudios hematológicos básicos.</p>
+                            <p>Para realizar sus análisis puede acudir en horario de 7:00 am a 5:00 pm de lunes a sábado. Algunos estudios requieren preparación específica como ayuno.</p>
                         </div>
                     </div>
                 </div>
@@ -253,106 +282,110 @@
                     <div class="services__sidebar">
                         <div class="services__accordion">
                             <div class="services__title">
-                                <h4><img src="img/icons/services-icon.png" alt=""> Todos los Servicios</h4>
+                                <h4><i class="fa fa-medkit service-icon"></i> Todos los Servicios</h4>
                             </div>
                             <div class="accordion" id="accordionExample">
-                                <!-- Hematología -->
+                                <!-- Laboratorio -->
                                 <div class="card">
                                     <div class="card-heading active">
-                                        <a data-toggle="collapse" data-target="#collapseOne">Hematología</a>
-                                    </div>
-                                    
-                                </div>
-
-                                <!-- Hemostasia -->
-                                <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseTwo">Hemostasia</a>
-                                    </div>
-                                    
-                                </div>
-
-                                <!-- Bioquímica -->
-                                <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseThree">Bioquímica</a>
-                                    </div>
-                                    
-                                </div>
-
-                                <!-- Urianálisis -->
-                                <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseFour">Urianálisis</a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordionExample">
-                                        
+                                        <a href="#" data-service="laboratorio">
+                                            <i class="fa fa-flask service-icon"></i> Laboratorio
+                                        </a>
                                     </div>
                                 </div>
 
-                                <!-- Inmunoserología -->
+                                <!-- Consulta Medicina General -->
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseFive">Inmunoserología</a>
+                                        <a href="#" data-service="consulta-general">
+                                            <i class="fa fa-user-md service-icon"></i> Consulta Medicina General
+                                        </a>
                                     </div>
-                                    
                                 </div>
 
-                                <!-- Endocrinología -->
+                                <!-- Consulta Especialidades -->
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseSix">Endocrinología</a>
+                                        <a href="#" data-service="consulta-especialidades">
+                                            <i class="fa fa-stethoscope service-icon"></i> Consulta Medicina Especialidades
+                                        </a>
                                     </div>
-                                    
                                 </div>
 
-                                <!-- Marcadores Tumorales -->
+                                <!-- Rayos X -->
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseSeven">Marcadores Tumorales</a>
+                                        <a href="#" data-service="rayos-x">
+                                            <i class="fa fa-bolt service-icon"></i> Rayos X
+                                        </a>
                                     </div>
-                                    
                                 </div>
 
-                                <!-- Microbiología -->
+                                <!-- Ecografía -->
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseEight">Microbiología Clínica</a>
+                                        <a href="#" data-service="ecografia">
+                                            <i class="fa fa-heartbeat service-icon"></i> Ecografía
+                                        </a>
                                     </div>
-                                    
                                 </div>
 
-                                <!-- Líquidos Corporales -->
+                                <!-- Psicología -->
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseNine">Líquidos Corporales</a>
+                                        <a href="#" data-service="psicologia">
+                                            <i class="fa fa-comments service-icon"></i> Psicología
+                                        </a>
                                     </div>
-                                    
                                 </div>
 
-                                <!-- Citología y Biopsias -->
+                                <!-- Gastroenterología -->
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseTen">Citología y Biopsias</a>
+                                        <a href="#" data-service="gastroenterologia">
+                                            <i class="fa fa-medkit service-icon"></i> Consulta Gastroenterología
+                                        </a>
                                     </div>
-                                    
                                 </div>
 
-                                <!-- Estupefacientes -->
+                                <!-- Endoscopia -->
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseEleven">Estupefacientes</a>
+                                        <a href="#" data-service="endoscopia">
+                                            <i class="fa fa-camera service-icon"></i> Endoscopia
+                                        </a>
                                     </div>
-                                    
+                                </div>
+
+                                <!-- Colonoscopia -->
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a href="#" data-service="colonoscopia">
+                                            <i class="fa fa-search service-icon"></i> Colonoscopia
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Proctoscopia -->
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a href="#" data-service="proctoscopia">
+                                            <i class="fa fa-search service-icon"></i> Proctoscopia
+                                        </a>
+                                    </div>
                                 </div>
 
                                 <!-- Otros -->
-                                
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a href="#" data-service="otros">
+                                            <i class="fa fa-plus-circle service-icon"></i> Otros
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                   
                 </div>
             </div>
         </div>
@@ -476,1791 +509,195 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Base de datos COMPLETA de todos los servicios
+        // Base de datos ACTUALIZADA con los nuevos servicios
         const allServices = {
-            // ========== HEMATOLOGÍA ==========
-          'hemograma': { 
-    title: 'Hemograma Completo', 
-    price: 'S/ 25.00', 
-    category: 'HEMATOLOGÍA', 
-    description: 'Evaluación completa de células sanguíneas que incluye recuento de glóbulos rojos, blancos y plaquetas. Diagnóstico de anemias, infecciones y trastornos hematológicos.',
-    mainImage: './img/hemograma.jpg',
-    equipment: [
-        './img/hemograma.jpg',
-        './img/microscopio.jpg',
-        './img/centrifuga.jpg',
-        './img/analizador-hematologico.jpg'
-    ],
-    equipmentDesc: [
-        'Microscopio para diferencial leucocitario',
-        'Centrífuga para procesamiento de muestras',
-        'Analizador hematológico automatizado Sysmex'
-    ],
-    details: 'Realizado con analizadores hematológicos automatizados de última generación. Tiempo de entrega: 4-6 horas. Muestra: 3 ml de sangre en EDTA.'
-},
-            'hematocrito': { 
-                title: 'Hematocrito', 
-                price: 'S/ 15.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Mide el porcentaje de glóbulos rojos en la sangre total. Fundamental para diagnóstico de anemias y deshidratación.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador hematológico automatizado',
-                    'Microcentrífuga para microhematocrito'
-                ],
-                details: 'Método automatizado y microhematocrito. Resultados en 2 horas. No requiere ayuno.'
-            },
-            'hemoglobina': { 
-                title: 'Hemoglobina', 
-                price: 'S/ 18.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Determinación de concentración de hemoglobina en sangre. Esencial para evaluación de oxigenación y diagnóstico de anemias.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador hematológico automatizado'
-                ],
-                details: 'Método automatizado. Tiempo: 2 horas. Incluido en hemograma completo.'
-            },
-            'eosinofilos': { 
-                title: 'Recuento de Eosinófilos', 
-                price: 'S/ 20.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Conteo específico de eosinófilos para diagnóstico de alergias, parasitosis y enfermedades autoinmunes.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para recuento manual',
-                    'Analizador hematológico automatizado'
-                ],
-                details: 'Recuento automatizado con verificación microscópica. Tiempo: 3 horas.'
-            },
-            'reticulocitos': { 
-                title: 'Recuento de Reticulocitos', 
-                price: 'S/ 22.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Evaluación de glóbulos rojos inmaduros para diagnóstico de anemias y monitorización de tratamientos.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio con tinción especial'
-                ],
-                details: 'Tinción supravital y recuento manual. Tiempo: 4 horas.'
-            },
-            'vsg': { 
-                title: 'Velocidad de Sedimentación Globular', 
-                price: 'S/ 18.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Medición de la velocidad de sedimentación de eritrocitos. Marcador inespecífico de inflamación.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de sedimentación automatizado'
-                ],
-                details: 'Método de Westergren automatizado. Tiempo: 1 hora + 1 hora de sedimentación.'
-            },
-            'constantes': { 
-                title: 'Constantes Corpusculares', 
-                price: 'S/ 20.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Cálculo de índices eritrocitarios: VCM, HCM, CHCM para caracterización de anemias.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador hematológico automatizado'
-                ],
-                details: 'Cálculo automatizado a partir de hemograma. Incluido en hemograma completo.'
-            },
-            'hierro': { 
-                title: 'Hierro Sérico', 
-                price: 'S/ 25.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Determinación de niveles de hierro en sangre para diagnóstico de anemias ferropénicas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método colorimétrico. Tiempo: 4 horas. Ayuno de 8 horas recomendado.'
-            },
-            'ferritina': { 
-                title: 'Ferritina', 
-                price: 'S/ 30.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Proteína de almacenamiento de hierro. Marcador de reservas de hierro en el organismo.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas.'
-            },
-            'transferrina': { 
-                title: 'Transferrina', 
-                price: 'S/ 28.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Proteína transportadora de hierro. Evaluación del metabolismo del hierro.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de inmunoturbidimetría. Tiempo: 6 horas.'
-            },
-            'saturacion': { 
-                title: '% Saturación de Transferrina', 
-                price: 'S/ 30.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Cálculo del porcentaje de saturación de transferrina con hierro.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Cálculo a partir de hierro y transferrina. Tiempo: 6 horas.'
-            },
-            'celulas-le': { 
-                title: 'Células LE', 
-                price: 'S/ 35.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Detección de células lupus eritematoso para diagnóstico de lupus eritematoso sistémico.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para citología'
-                ],
-                details: 'Examen microscópico especial. Tiempo: 24 horas.'
-            },
-            'grupo-sanguineo': { 
-                title: 'Grupo Sanguíneo y Factor RH', 
-                price: 'S/ 20.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Determinación de grupo sanguíneo (ABO) y factor RH para transfusiones y embarazos.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de tipificación sanguínea'
-                ],
-                details: 'Método de aglutinación en tubo. Tiempo: 2 horas.'
-            },
-            'compatibilidad': { 
-                title: 'Prueba de Compatibilidad Sanguínea', 
-                price: 'S/ 40.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Test de compatibilidad cruzada para transfusiones sanguíneas seguras.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de compatibilidad cruzada'
-                ],
-                details: 'Prueba mayor y menor. Tiempo: 4 horas. Urgencias: 1 hora.'
-            },
-            'lamina': { 
-                title: 'Lámina Periférica', 
-                price: 'S/ 25.00', 
-                category: 'HEMATOLOGÍA', 
-                description: 'Estudio morfológico de células sanguíneas en extendido de sangre periférica.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio de alta resolución'
-                ],
-                details: 'Tinción de Wright y examen microscópico. Tiempo: 4 horas.'
-            },
-
-            // ========== HEMOSTASIA ==========
-            'plaquetas': { 
-                title: 'Recuento de Plaquetas', 
-                price: 'S/ 18.00', 
-                category: 'HEMOSTASIA', 
-                description: 'Conteo preciso de plaquetas para evaluación de trastornos de coagulación y sangrado.',
+            // ========== LABORATORIO ==========
+            'laboratorio': { 
+                title: 'Laboratorio Clínico', 
+                price: 'Consultar', 
+                category: 'LABORATORIO', 
+                description: 'Servicios completos de laboratorio clínico con análisis hematológicos, bioquímicos, microbiología y más. Contamos con tecnología de última generación para resultados precisos y confiables.',
                 mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
                 equipment: [
                     'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador hematológico con contador de plaquetas',
-                    'Microscopio para verificación manual'
-                ],
-                details: 'Método automatizado con verificación microscópica. Tiempo: 3 horas. Muestra: sangre en EDTA.'
-            },
-            'coagulacion': { 
-                title: 'Tiempo de Coagulación', 
-                price: 'S/ 22.00', 
-                category: 'HEMOSTASIA', 
-                description: 'Evaluación del tiempo de coagulación sanguínea global.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Coagulómetro automatizado'
-                ],
-                details: 'Método mecánico. Tiempo: 2 horas. Muestra: sangre en citrato.'
-            },
-            'protrombina': { 
-                title: 'Tiempo de Protrombina / INR', 
-                price: 'S/ 25.00', 
-                category: 'HEMOSTASIA', 
-                description: 'Evaluación de vía extrínseca de coagulación. Control de tratamiento con anticoagulantes orales.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Coagulómetro automatizado'
-                ],
-                details: 'Método de coagulación. Tiempo: 2 horas. INR para control de warfarina.'
-            },
-            'trombina': { 
-                title: 'Tiempo de Trombina', 
-                price: 'S/ 25.00', 
-                category: 'HEMOSTASIA', 
-                description: 'Evaluación de la conversión de fibrinógeno a fibrina. Diagnóstico de hipofibrinogenemia.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Coagulómetro automatizado'
-                ],
-                details: 'Método de coagulación. Tiempo: 2 horas.'
-            },
-            'tromboplastina': { 
-                title: 'Tiempo Parcial de Tromboplastina', 
-                price: 'S/ 28.00', 
-                category: 'HEMOSTASIA', 
-                description: 'Evaluación de vía intrínseca de coagulación. Diagnóstico de hemofilias.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Coagulómetro automatizado'
-                ],
-                details: 'Método de coagulación activada. Tiempo: 2 horas.'
-            },
-            'fibrinogeno': { 
-                title: 'Dosaje de Fibrinógeno', 
-                price: 'S/ 30.00', 
-                category: 'HEMOSTASIA', 
-                description: 'Cuantificación de fibrinógeno en plasma. Evaluación de capacidad de coagulación.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Coagulómetro automatizado'
-                ],
-                details: 'Método de Clauss. Tiempo: 3 horas.'
-            },
-            'dimero': { 
-                title: 'Dímero D', 
-                price: 'S/ 45.00', 
-                category: 'HEMOSTASIA', 
-                description: 'Marcador de fibrinólisis. Diagnóstico de trombosis venosa y embolia pulmonar.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA. Tiempo: 4 horas. Marcador de tromboembolismo.'
-            },
-
-            // ========== BIOQUÍMICA ==========
-            'glucosa': { 
-                title: 'Glucosa', 
-                price: 'S/ 8.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Determinación de niveles de glucosa en sangre para diagnóstico y control de diabetes.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado',
-                    'Sistema de procesamiento de muestras'
-                ],
-                details: 'Método enzimático colorimétrico. Ayuno de 8 horas requerido. Tiempo: 2 horas.'
-            },
-            'glucosa-post': { 
-                title: 'Glucosa Post Prandial', 
-                price: 'S/ 10.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Glucosa medida 2 horas después de ingerir alimentos. Evaluación de tolerancia a glucosa.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Muestra 2 horas después de comida. Tiempo: 2 horas.'
-            },
-            'hemoglobina-glic': { 
-                title: 'Hemoglobina Glicosilada', 
-                price: 'S/ 25.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Control de diabetes a largo plazo. Refleja el promedio de glucosa en 3 meses.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de cromatografía líquida'
-                ],
-                details: 'Método de cromatografía. Tiempo: 24 horas. No requiere ayuno.'
-            },
-            'tolerancia-glucosa': { 
-                title: 'Tolerancia a la Glucosa', 
-                price: 'S/ 35.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Curva de tolerancia a la glucosa oral para diagnóstico de diabetes y prediabetes.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Múltiples muestras en 2 horas. Ayuno de 8 horas. Duración: 3 horas.'
-            },
-            'tolerancia-lactosa': { 
-                title: 'Tolerancia a la Lactosa', 
-                price: 'S/ 40.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Test para diagnóstico de intolerancia a la lactosa mediante curva de glucosa.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Múltiples muestras después de ingerir lactosa. Duración: 3 horas.'
-            },
-            'colesterol-total': { 
-                title: 'Colesterol Total', 
-                price: 'S/ 12.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Nivel total de colesterol en sangre. Evaluación de riesgo cardiovascular.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método enzimático. Ayuno de 12 horas. Tiempo: 3 horas.'
-            },
-            'colesterol-hdl': { 
-                title: 'Colesterol HDL', 
-                price: 'S/ 15.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Colesterol de alta densidad (colesterol "bueno"). Factor protector cardiovascular.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método de precipitación. Ayuno de 12 horas. Tiempo: 3 horas.'
-            },
-            'colesterol-ldl': { 
-                title: 'Colesterol LDL', 
-                price: 'S/ 15.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Colesterol de baja densidad (colesterol "malo"). Principal factor de riesgo cardiovascular.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Cálculo por fórmula de Friedewald. Ayuno de 12 horas. Tiempo: 3 horas.'
-            },
-            'trigliceridos': { 
-                title: 'Triglicéridos', 
-                price: 'S/ 12.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Nivel de triglicéridos en sangre. Evaluación de riesgo cardiovascular y pancreatitis.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método enzimático. Ayuno de 12 horas. Tiempo: 3 horas.'
-            },
-            'urea': { 
-                title: 'Úrea', 
-                price: 'S/ 10.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Producto final del metabolismo de proteínas. Marcador de función renal.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método enzimático. No requiere ayuno. Tiempo: 2 horas.'
-            },
-            'creatinina': { 
-                title: 'Creatinina', 
-                price: 'S/ 10.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Marcador específico de función renal. Filtración glomerular.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método de Jaffé. No requiere ayuno. Tiempo: 2 horas.'
-            },
-            'acido-urico': { 
-                title: 'Ácido Úrico', 
-                price: 'S/ 12.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Producto final del metabolismo de purinas. Diagnóstico de gota y litiasis renal.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método enzimático. No requiere ayuno. Tiempo: 2 horas.'
-            },
-            'bilirrubina': { 
-                title: 'Bilirrubina Total y Fraccionada', 
-                price: 'S/ 18.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Evaluación de función hepática y diagnóstico de ictericias.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método de diazorreacción. Ayuno recomendado. Tiempo: 3 horas.'
-            },
-            'transaminasas': { 
-                title: 'Transaminasas GOT/GPT', 
-                price: 'S/ 20.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Enzimas hepáticas AST (GOT) y ALT (GPT). Marcadores de daño hepático.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método cinético UV. Ayuno recomendado. Tiempo: 3 horas.'
-            },
-            'fosfatasa': { 
-                title: 'Fosfatasa Alcalina', 
-                price: 'S/ 18.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Enzima relacionada con huesos e hígado. Diagnóstico de enfermedades óseas y hepáticas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método cinético. No requiere ayuno. Tiempo: 3 horas.'
-            },
-            'proteinas': { 
-                title: 'Proteínas Totales y Fraccionadas', 
-                price: 'S/ 22.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Electroforesis de proteínas séricas para evaluación de estado nutricional y paraproteínas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de electroforesis automatizado'
-                ],
-                details: 'Electroforesis en gel de agarosa. Tiempo: 24 horas.'
-            },
-            'gamma': { 
-                title: 'Gamma Glutamil Transpeptidasa', 
-                price: 'S/ 20.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Enzima hepática GGT. Marcador de colestasis y consumo de alcohol.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método cinético. Ayuno recomendado. Tiempo: 3 horas.'
-            },
-            'dhl': { 
-                title: 'Deshidrogenasa Láctica (DHL)', 
-                price: 'S/ 22.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Enzima indicadora de daño tisular. Diagnóstico de infartos y anemias hemolíticas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método cinético. No requiere ayuno. Tiempo: 3 horas.'
-            },
-            'fosfatasa-acida': { 
-                title: 'Fosfatasa Ácida Prostática', 
-                price: 'S/ 25.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Marcador prostático. Diagnóstico de cáncer de próstata (en desuso, reemplazado por PSA).',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método enzimático. Tiempo: 4 horas.'
-            },
-            'amilasa': { 
-                title: 'Amilasa', 
-                price: 'S/ 18.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Enzima pancreática. Diagnóstico de pancreatitis aguda.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método enzimático colorimétrico. Tiempo: 3 horas.'
-            },
-            'lipasa': { 
-                title: 'Lipasa', 
-                price: 'S/ 20.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Enzima pancreática específica para diagnóstico de pancreatitis.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Método enzimático. Más específica que amilasa. Tiempo: 3 horas.'
-            },
-            'cpk': { 
-                title: 'Creatinfosfoquinasa MB', 
-                price: 'S/ 30.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Fracción MB de la CPK. Marcador de daño cardíaco (infarto de miocardio).',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de inmunoinhibición. Tiempo: 4 horas. Marcador cardíaco.'
-            },
-            'troponina': { 
-                title: 'Troponina T', 
-                price: 'S/ 45.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Marcador cardíaco específico para diagnóstico de infarto agudo de miocardio.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de inmunoensayo de alta sensibilidad. Tiempo: 4 horas.'
-            },
-            'ada': { 
-                title: 'Adenosina Deaminasa (ADA)', 
-                price: 'S/ 35.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Enzima para diagnóstico de tuberculosis, especialmente en líquidos corporales.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Espectrofotómetro'
-                ],
-                details: 'Método colorimétrico. Tiempo: 4 horas. Marcador de tuberculosis.'
-            },
-            'peptido-c': { 
-                title: 'Péptido C', 
-                price: 'S/ 40.00', 
-                category: 'BIOQUÍMICA', 
-                description: 'Marcador de producción endógena de insulina. Diagnóstico de diabetes tipo 1 y 2.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de quimioluminiscencia. Ayuno de 8 horas. Tiempo: 6 horas.'
-            },
-
-            // ========== URIANÁLISIS ==========
-            'embarazo': { 
-                title: 'Diagnóstico de Embarazo', 
-                price: 'S/ 15.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Test cualitativo para detección de hormona gonadotropina coriónica humana (HCG) en orina.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Test de embarazo rápido cualitativo',
-                    'Analizador de orina automatizado'
-                ],
-                details: 'Resultados en 15 minutos. Muestra: primera orina de la mañana. Sensibilidad: 25 mUI/ml.'
-            },
-            'proteinuria': { 
-                title: 'Proteína en Orina 24h', 
-                price: 'S/ 25.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Cuantificación de proteínas en orina de 24 horas para evaluación de función renal.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador bioquímico automatizado'
-                ],
-                details: 'Recolección de orina de 24 horas. Tiempo: 24 horas después de recepción.'
-            },
-            'beta-micro': { 
-                title: 'Beta-2 Microglobulina', 
-                price: 'S/ 35.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Marcador de función renal tubular y enfermedades linfoproliferativas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA. Tiempo: 24 horas. En orina o suero.'
-            },
-            'uroanalisis': { 
-                title: 'Uroanálisis Completo', 
-                price: 'S/ 12.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Análisis físico, químico y microscópico de orina para evaluación de salud renal y urinaria.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Tiras reactivas automatizadas',
-                    'Microscopio para sedimento urinario'
-                ],
-                details: 'Examen completo. Tiempo: 2 horas. Muestra: orina de chorro medio.'
-            },
-            'gravindex': { 
-                title: 'Test de Gravindex', 
-                price: 'S/ 18.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Test de embarazo cualitativo rápido con alta sensibilidad.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Test de embarazo rápido'
-                ],
-                details: 'Resultados en 5-10 minutos. Sensibilidad: 20 mUI/ml.'
-            },
-            'coproparasitologico': { 
-                title: 'Coprológico', 
-                price: 'S/ 15.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Estudio parasitológico de materia fecal para detección de parásitos intestinales.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para parasitología'
-                ],
-                details: 'Métodos directo y de concentración. Tiempo: 24 horas.'
-            },
-            'sangre-oculta': { 
-                title: 'Sangre Oculta', 
-                price: 'S/ 12.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Detección de sangre no visible en heces para screening de cáncer colorectal.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Test inmunológico para sangre oculta'
-                ],
-                details: 'Método inmunológico. Dieta especial 3 días antes. Tiempo: 2 horas.'
-            },
-            'fascicla': { 
-                title: 'Investigación de Fascicla', 
-                price: 'S/ 20.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Detección específica de parásito Fasciola hepática en heces.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para parasitología'
-                ],
-                details: 'Método de sedimentación. Tiempo: 24 horas.'
-            },
-            'carto': { 
-                title: 'Investigación de Carto', 
-                price: 'S/ 20.00', 
-                category: 'URIANÁLISIS', 
-                description: 'Estudio parasitológico especial para detección de protozoarios intestinales.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para parasitología'
-                ],
-                details: 'Tinción especial para protozoarios. Tiempo: 24 horas.'
-            },
-
-            // ========== INMUNOSEROLOGÍA ==========
-            'dengue': { 
-                title: 'Prueba de Dengue', 
-                price: 'S/ 35.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de anticuerpos IgM e IgG contra el virus del dengue mediante técnica ELISA.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de ELISA automatizado',
-                    'Lector de microplacas'
-                ],
-                details: 'Técnica ELISA. Tiempo: 24 horas. Muestra: suero. Detecta infección aguda y previa.'
-            },
-            'aglutinaciones': { 
-                title: 'Aglutinaciones Febriles', 
-                price: 'S/ 40.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de anticuerpos contra Salmonella typhi y paratyphi para diagnóstico de fiebre tifoidea.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de aglutinación en placa'
-                ],
-                details: 'Aglutinación en placa. Tiempo: 4 horas. Múltiples antígenos.'
-            },
-            'rosa-bengala': { 
-                title: 'Rosa de Bengala', 
-                price: 'S/ 30.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Test de screening para brucelosis mediante aglutinación con antígeno teñido.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de aglutinación en placa'
-                ],
-                details: 'Aglutinación rápida. Tiempo: 2 horas. Screening para brucelosis.'
-            },
-            'factor-reumatoide': { 
-                title: 'Factor Reumatoide', 
-                price: 'S/ 25.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de autoanticuerpos para diagnóstico de artritis reumatoide.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de latex o nefelometría. Tiempo: 4 horas.'
-            },
-            'proteina-c': { 
-                title: 'Proteína C Reactiva', 
-                price: 'S/ 20.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Proteína de fase aguda. Marcador inespecífico de inflamación e infección.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de inmunoturbidimetría. Tiempo: 2 horas.'
-            },
-            'parathormona': { 
-                title: 'Parathormona Intacta', 
-                price: 'S/ 45.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Hormona paratiroidea para evaluación del metabolismo del calcio y fósforo.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas.'
-            },
-            'ana': { 
-                title: 'Anticuerpos Antinucleares', 
-                price: 'S/ 50.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de autoanticuerpos para diagnóstico de enfermedades autoinmunes sistémicas.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Inmunofluorescencia indirecta',
-                    'Microscopio de fluorescencia'
-                ],
-                details: 'Inmunofluorescencia en células HEp-2. Tiempo: 48 horas.'
-            },
-            'cisticercosis': { 
-                title: 'Cisticercosis', 
-                price: 'S/ 55.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de anticuerpos contra Taenia solium para diagnóstico de neurocisticercosis.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de Western Blot'
-                ],
-                details: 'Western Blot. Tiempo: 72 horas. Alta especificidad.'
-            },
-            'hidatidosis': { 
-                title: 'Hidatidosis', 
-                price: 'S/ 55.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de anticuerpos contra Echinococcus granulosus para diagnóstico de quiste hidatídico.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de Western Blot'
-                ],
-                details: 'Western Blot. Tiempo: 72 horas.'
-            },
-            'fasciolosis': { 
-                title: 'Fasciolosis', 
-                price: 'S/ 55.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de anticuerpos contra Fasciola hepática para diagnóstico de distomatosis hepática.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de Western Blot'
-                ],
-                details: 'Western Blot. Tiempo: 72 horas.'
-            },
-            'aso': { 
-                title: 'Anti Estreptolisina O', 
-                price: 'S/ 25.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Anticuerpos antiestreptocócicos para diagnóstico de fiebre reumática y glomerulonefritis.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de inmunoturbidimetría. Tiempo: 4 horas.'
-            },
-            'rotavirus': { 
-                title: 'Rotavirus', 
-                price: 'S/ 40.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de antígeno de rotavirus en heces para diagnóstico de gastroenteritis viral.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Test inmunocromatográfico rápido'
-                ],
-                details: 'Test rápido. Tiempo: 1 hora. Muestra: heces.'
-            },
-            'hbsag': { 
-                title: 'HBsAg', 
-                price: 'S/ 30.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Antígeno de superficie de hepatitis B. Marcador de infección activa por VHB.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA o quimioluminiscencia. Tiempo: 6 horas.'
-            },
-            'anti-hbc': { 
-                title: 'Anti-HBc', 
-                price: 'S/ 35.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Anticuerpos contra el core del virus de hepatitis B. Marcador de infección previa o actual.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA. Tiempo: 6 horas.'
-            },
-            'hepatitis-a': { 
-                title: 'Hepatitis A IgM', 
-                price: 'S/ 40.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Anticuerpos IgM contra virus de hepatitis A. Diagnóstico de infección aguda por VHA.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA. Tiempo: 6 horas. Marcador de infección aguda.'
-            },
-            'hepatitis-c': { 
-                title: 'Hepatitis C', 
-                price: 'S/ 45.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de anticuerpos contra virus de hepatitis C. Screening de infección por VHC.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA. Tiempo: 6 horas. Confirmación con PCR si es positivo.'
-            },
-            'vih': { 
-                title: 'VIH (ELISA)', 
-                price: 'S/ 25.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Test de screening para detección de anticuerpos contra virus de inmunodeficiencia humana.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de ELISA automatizado'
-                ],
-                details: 'ELISA de 4ta generación. Tiempo: 6 horas. Confirmación con Western Blot.'
-            },
-            'chlamydia': { 
-                title: 'Chlamydia Trachomatis', 
-                price: 'S/ 50.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Detección de anticuerpos IgG e IgM contra Chlamydia trachomatis.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA. Tiempo: 6 horas. Para diagnóstico de infecciones genitales.'
-            },
-            'helicobacter-igg': { 
-                title: 'Helicobacter Pylori IgG', 
-                price: 'S/ 35.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Anticuerpos IgG contra Helicobacter pylori para diagnóstico de infección gástrica.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA. Tiempo: 6 horas. No distingue infección activa de pasada.'
-            },
-            'helicobacter-igm': { 
-                title: 'Helicobacter Pylori IgM', 
-                price: 'S/ 35.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Anticuerpos IgM contra Helicobacter pylori para diagnóstico de infección reciente.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de ELISA. Tiempo: 6 horas. Marcador de infección aguda.'
-            },
-            'test-aliento': { 
-                title: 'Test de Aliento', 
-                price: 'S/ 60.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Test de aliento con urea marcada para diagnóstico de infección activa por H. pylori.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Espectrómetro de masa'
-                ],
-                details: 'Urea marcada con C13 o C14. Tiempo: 2 horas. Ayuno de 6 horas.'
-            },
-            'coombs-directo': { 
-                title: 'Coombs Directo', 
-                price: 'S/ 30.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Test de antiglobulina directa para detección de anticuerpos unidos a eritrocitos.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de Coombs automatizado'
-                ],
-                details: 'Aglutinación con antiglobulina. Tiempo: 4 horas. Para anemias hemolíticas.'
-            },
-            'coombs-indirecto': { 
-                title: 'Coombs Indirecto', 
-                price: 'S/ 30.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Test de antiglobulina indirecta para detección de anticuerpos libres en suero.',
-                mainImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de Coombs automatizado'
-                ],
-                details: 'Aglutinación con antiglobulina. Tiempo: 4 horas. Para compatibilidad sanguínea.'
-            },
-            'ige': { 
-                title: 'IgE', 
-                price: 'S/ 40.00', 
-                category: 'INMUNOSEROLOGÍA', 
-                description: 'Inmunoglobulina E total. Marcador de procesos alérgicos y parasitosis.',
-                mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas.'
-            },
-
-            // ========== ENDOCRINOLOGÍA ==========
-            'tsh': { 
-                title: 'TSH', 
-                price: 'S/ 25.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'Hormona estimulante de tiroides. Marcador principal de función tiroidea.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas. No requiere ayuno específico.'
-            },
-            't3': { 
-                title: 'T3', 
-                price: 'S/ 30.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'Triyodotironina. Hormona tiroidea activa. Evaluación de hipertiroidismo.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas.'
-            },
-            't4-libre': { 
-                title: 'T4 Libre', 
-                price: 'S/ 30.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'Tiroxina libre. Fracción activa de T4. Evaluación de función tiroidea.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas.'
-            },
-            'cortisol': { 
-                title: 'Cortisol', 
-                price: 'S/ 35.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'Hormona del estrés producida por glándulas suprarrenales. Evaluación de función adrenal.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas. Muestra preferiblemente en la mañana.'
-            },
-            'dhea': { 
-                title: 'Dehidroepiandrosterona', 
-                price: 'S/ 40.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'DHEA-S. Precursor de andrógenos y estrógenos. Evaluación de función adrenal.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas.'
-            },
-            'progesterona': { 
-                title: 'Progesterona', 
-                price: 'S/ 35.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'Hormona sexual femenina. Evaluación de ovulación y función del cuerpo lúteo.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas. Día específico del ciclo menstrual.'
-            },
-            'testosterona': { 
-                title: 'Testosterona', 
-                price: 'S/ 35.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'Hormona sexual masculina principal. Evaluación de hipogonadismo y trastornos endocrinos.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas. Muestra preferiblemente en la mañana.'
-            },
-            'lh': { 
-                title: 'Hormona Luteinizante', 
-                price: 'S/ 30.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'LH. Hormona gonadotrópica que regula la ovulación y producción de testosterona.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas.'
-            },
-            'prolactina': { 
-                title: 'Prolactina', 
-                price: 'S/ 30.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'Hormona que estimula la producción de leche materna. Evaluación de galactorrea y prolactinomas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas. Muestra en reposo, sin estrés.'
-            },
-            'fsh': { 
-                title: 'Hormona Folículo Estimulante', 
-                price: 'S/ 30.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'FSH. Hormona que regula el desarrollo folicular en mujeres y espermatogénesis en hombres.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas.'
-            },
-            'estradiol': { 
-                title: 'Estradiol', 
-                price: 'S/ 35.00', 
-                category: 'ENDOCRINOLOGÍA', 
-                description: 'Principal estrógeno en mujeres. Evaluación de función ovárica y desarrollo sexual.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de quimioluminiscencia'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 6 horas. Día específico del ciclo menstrual.'
-            },
-
-            // ========== MARCADORES TUMORALES ==========
-            'psa': { 
-                title: 'PSA', 
-                price: 'S/ 35.00', 
-                category: 'MARCADORES TUMORALES', 
-                description: 'Antígeno prostático específico. Marcador para cáncer de próstata y hiperplasia benigna.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 24 horas. Evitar actividad sexual 48h antes.'
-            },
-            'afp': { 
-                title: 'AFP', 
-                price: 'S/ 40.00', 
-                category: 'MARCADORES TUMORALES', 
-                description: 'Alfa fetoproteína. Marcador de cáncer hepático y tumores germinales.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 24 horas.'
-            },
-            'cea': { 
-                title: 'CEA', 
-                price: 'S/ 45.00', 
-                category: 'MARCADORES TUMORALES', 
-                description: 'Antígeno carcinoembrionario. Marcador de cáncer colorectal y otros adenocarcinomas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 24 horas.'
-            },
-            'ca125': { 
-                title: 'CA 125', 
-                price: 'S/ 50.00', 
-                category: 'MARCADORES TUMORALES', 
-                description: 'Marcador de cáncer de ovario. También elevado en endometriosis y condiciones benignas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 24 horas.'
-            },
-            'ca153': { 
-                title: 'CA 15-3', 
-                price: 'S/ 50.00', 
-                category: 'MARCADORES TUMORALES', 
-                description: 'Marcador de cáncer de mama. Seguimiento de tratamiento y detección de recidivas.',
-                mainImage: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador de inmunoensayo'
-                ],
-                details: 'Método de quimioluminiscencia. Tiempo: 24 horas.'
-            },
-
-            // ========== MICROBIOLOGÍA CLÍNICA ==========
-            'baciloscopia': { 
-                title: 'Baciloscopia', 
-                price: 'S/ 20.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Tinción de Ziehl-Neelsen para detección de bacilos ácido-alcohol resistentes (BAAR).',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio con iluminación LED'
-                ],
-                details: 'Tinción de Ziehl-Neelsen. Tiempo: 24 horas. Para diagnóstico de tuberculosis.'
-            },
-            'sec-uretral': { 
-                title: 'Secreción Uretral', 
-                price: 'S/ 25.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Estudio microscópico de secreción uretral para diagnóstico de infecciones de transmisión sexual.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para bacteriología'
-                ],
-                details: 'Examen directo y tinción de Gram. Tiempo: 4 horas.'
-            },
-            'sec-vaginal': { 
-                title: 'Secreción Vaginal', 
-                price: 'S/ 25.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Estudio de flujo vaginal para diagnóstico de vaginosis, candidiasis y tricomoniasis.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para ginecología'
-                ],
-                details: 'Examen en fresco y tinción. Tiempo: 4 horas. No durante menstruación.'
-            },
-            'gota-gruesa': { 
-                title: 'Gota Gruesa', 
-                price: 'S/ 18.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Técnica para diagnóstico de malaria (paludismo) mediante visualización de plasmodium.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para parasitología'
-                ],
-                details: 'Tinción de Giemsa. Tiempo: 4 horas. Para diagnóstico de malaria.'
-            },
-            'raspado-piel': { 
-                title: 'Raspado de Piel', 
-                price: 'S/ 20.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Estudio micológico directo para diagnóstico de dermatofitosis y otras infecciones fúngicas.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para micología'
-                ],
-                details: 'Examen con KOH. Tiempo: 4 horas. Muestra de lesiones activas.'
-            },
-            'coloracion-gram': { 
-                title: 'Coloración Gram', 
-                price: 'S/ 15.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Tinción diferencial para clasificación bacteriana en Gram positivas y negativas.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microscopio para bacteriología'
-                ],
-                details: 'Tinción de Gram. Tiempo: 2 horas. Para todo tipo de muestras.'
-            },
-            'urocultivo': { 
-                title: 'Urocultivo/Antibiograma', 
-                price: 'S/ 35.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Cultivo de orina para identificación de bacterias y prueba de sensibilidad a antibióticos.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Incubadora de cultivos',
-                    'Sistema de identificación bacteriana'
-                ],
-                details: 'Tiempo: 48-72 horas. Muestra: orina de chorro medio. Ayuno no requerido.'
-            },
-            'coprocultivo': { 
-                title: 'Coprocultivo/Antibiograma', 
-                price: 'S/ 35.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Cultivo de heces para identificación de bacterias patógenas intestinales.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Incubadora de cultivos'
-                ],
-                details: 'Tiempo: 48-72 horas. Muestra: heces recientes.'
-            },
-            'hemocultivo': { 
-                title: 'Hemocultivo/Antibiograma', 
-                price: 'S/ 45.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Cultivo de sangre para detección de bacteriemia y sepsis.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de hemocultivos automatizado'
-                ],
-                details: 'Tiempo: 5-7 días. Múltiples tomas en picos febriles.'
-            },
-            'cultivo-faringe': { 
-                title: 'Cultivo de Secreción Faríngea', 
-                price: 'S/ 30.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Cultivo de exudado faríngeo para diagnóstico de faringoamigdalitis bacteriana.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Incubadora de cultivos'
-                ],
-                details: 'Tiempo: 48 horas. Muestra: exudado faríngeo.'
-            },
-            'cultivo-vaginal': { 
-                title: 'Cultivo de Secreción Vaginal', 
-                price: 'S/ 30.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Cultivo vaginal para identificación de patógenos en infecciones ginecológicas.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Incubadora de cultivos'
-                ],
-                details: 'Tiempo: 48-72 horas. No durante menstruación.'
-            },
-            'cultivo-semen': { 
-                title: 'Cultivo de Semen', 
-                price: 'S/ 35.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Cultivo de semen para diagnóstico de infecciones del tracto genital masculino.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Incubadora de cultivos'
-                ],
-                details: 'Tiempo: 48-72 horas. Abstinencia sexual 3-5 días.'
-            },
-            'cultivo-hongos': { 
-                title: 'Cultivo de Hongos', 
-                price: 'S/ 40.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Cultivo micológico para identificación de especies fúngicas patógenas.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Incubadora para hongos'
-                ],
-                details: 'Tiempo: 2-4 semanas. Para muestras diversas.'
-            },
-            'cultivo-removedor': { 
-                title: 'Cultivo con Removedor', 
-                price: 'S/ 45.00', 
-                category: 'MICROBIOLOGÍA CLÍNICA', 
-                description: 'Cultivo especial con removedor de antibióticos para muestras de pacientes en tratamiento.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Sistema de cultivo especial'
-                ],
-                details: 'Tiempo: 48-72 horas. Para muestras con antibióticos.'
-            },
-
-            // ========== LÍQUIDOS CORPORALES ==========
-            'espermatograma': { 
-                title: 'Espermatograma', 
-                price: 'S/ 40.00', 
-                category: 'LÍQUIDOS CORPORALES', 
-                description: 'Análisis completo de semen: concentración, movilidad y morfología espermática.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
                     'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop',
                     'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Microscopio con cámara de Neubauer',
-                    'Incubadora para muestras'
+                    'Analizadores hematológicos automatizados',
+                    'Microscopios de alta resolución',
+                    'Centrífugas y equipos de procesamiento'
                 ],
-                details: 'Abstinencia sexual de 3-5 días. Tiempo: 24 horas. Muestra recolectada en clínica.'
-            },
-            'liquido-cefalorraquideo': { 
-                title: 'Líquido Cefalorraquídeo', 
-                price: 'S/ 50.00', 
-                category: 'LÍQUIDOS CORPORALES', 
-                description: 'Estudio bioquímico, citológico y microbiológico de LCR para diagnóstico de meningitis.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador para líquidos corporales'
-                ],
-                details: 'Estudio completo. Tiempo: 24 horas. Muestra por punción lumbar.'
-            },
-            'liquido-ascitico': { 
-                title: 'Líquido Ascítico', 
-                price: 'S/ 45.00', 
-                category: 'LÍQUIDOS CORPORALES', 
-                description: 'Análisis de líquido ascítico para diagnóstico de ascitis y peritonitis bacteriana.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador para líquidos corporales'
-                ],
-                details: 'Estudio citoquímico. Tiempo: 24 horas. Muestra por paracentesis.'
-            },
-            'liquido-pleural': { 
-                title: 'Líquido Pleural', 
-                price: 'S/ 45.00', 
-                category: 'LÍQUIDOS CORPORALES', 
-                description: 'Análisis de líquido pleural para diagnóstico de derrames pleurales.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador para líquidos corporales'
-                ],
-                details: 'Estudio citoquímico. Tiempo: 24 horas. Muestra por toracocentesis.'
-            },
-            'liquido-sinovial': { 
-                title: 'Líquido Sinovial', 
-                price: 'S/ 45.00', 
-                category: 'LÍQUIDOS CORPORALES', 
-                description: 'Análisis de líquido sinovial para diagnóstico de artritis y artropatías.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Analizador para líquidos corporales'
-                ],
-                details: 'Estudio citoquímico y microcristales. Tiempo: 24 horas. Muestra por artrocentesis.'
+                details: 'Realizamos más de 100 tipos de análisis diferentes. Tiempo de entrega variable según el estudio. Muestras: sangre, orina, heces, etc.'
             },
 
-            // ========== CITOLOGÍA Y BIOPSIAS ==========
-            'papanicolaou': { 
-                title: 'Papanicolaou', 
-                price: 'S/ 30.00', 
-                category: 'CITOLOGÍA Y BIOPSIAS', 
-                description: 'Citología cervical para detección temprana de cáncer de cuello uterino.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
+            // ========== CONSULTA MÉDICA GENERAL ==========
+            'consulta-general': { 
+                title: 'Consulta Medicina General', 
+                price: 'S/ 50.00', 
+                category: 'CONSULTA MÉDICA', 
+                description: 'Atención médica integral para pacientes de todas las edades. Diagnóstico, tratamiento y seguimiento de enfermedades comunes y agudas.',
+                mainImage: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=400&fit=crop',
                 equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
+                    'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=300&h=200&fit=crop',
+                    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Microscopio para citología'
+                    'Equipos de diagnóstico general',
+                    'Instrumental médico completo'
                 ],
-                details: 'Tiempo: 5-7 días. Evitar relaciones sexuales 48h antes. No durante menstruación.'
+                details: 'Duración: 20-30 minutos. No requiere ayuno. Traer estudios previos si los tiene.'
             },
-            'biopsia': { 
-                title: 'Biopsia', 
-                price: 'S/ 60.00', 
-                category: 'CITOLOGÍA Y BIOPSIAS', 
-                description: 'Estudio histopatológico de tejido para diagnóstico de enfermedades y cáncer.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
-                equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
-                ],
-                equipmentDesc: [
-                    'Microtomo para cortes histológicos'
-                ],
-                details: 'Tiempo: 5-7 días. Procesamiento, inclusión, corte y tinción.'
-            },
-            'pieza-quirurgica': { 
-                title: 'Pieza Quirúrgica', 
+
+            // ========== CONSULTA ESPECIALIDADES ==========
+            'consulta-especialidades': { 
+                title: 'Consulta Medicina Especialidades', 
                 price: 'S/ 80.00', 
-                category: 'CITOLOGÍA Y BIOPSIAS', 
-                description: 'Estudio anatomopatológico completo de piezas quirúrgicas y órganos.',
-                mainImage: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop',
+                category: 'ESPECIALIDADES MÉDICAS', 
+                description: 'Atención especializada con médicos en diversas áreas: cardiología, dermatología, pediatría, ginecología, traumatología y más.',
+                mainImage: 'https://images.unsplash.com/photo-1532938911079-9f3c6cb8d0db?w=600&h=400&fit=crop',
                 equipment: [
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop'
+                    'https://images.unsplash.com/photo-1532938911079-9f3c6cb8d0db?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Sistema completo de anatomía patológica'
+                    'Equipos especializados por área médica'
                 ],
-                details: 'Tiempo: 7-10 días. Descripción macroscópica y microscópica.'
+                details: 'Duración: 30-45 minutos. Cita previa recomendada. Especialidades disponibles según horario.'
             },
 
-            // ========== ESTUPEFACIENTES ==========
-            'marihuana': { 
-                title: 'Detección de Marihuana', 
-                price: 'S/ 40.00', 
-                category: 'ESTUPEFACIENTES', 
-                description: 'Test de screening para detección de metabolitos de cannabis en orina.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
+            // ========== RAYOS X ==========
+            'rayos-x': { 
+                title: 'Rayos X', 
+                price: 'S/ 60.00', 
+                category: 'IMAGENOLOGÍA', 
+                description: 'Servicio de radiografía digital para diagnóstico de fracturas, enfermedades pulmonares, estudios óseos y más. Tecnología digital de alta resolución.',
+                mainImage: 'https://images.unsplash.com/photo-1516549655669-df6654e447d9?w=600&h=400&fit=crop',
                 equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
+                    'https://images.unsplash.com/photo-1516549655669-df6654e447d9?w=300&h=200&fit=crop',
+                    'https://images.unsplash.com/photo-1581094794322-7c6dceeec0e5?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Sistema de inmunoensayo para drogas'
+                    'Equipo de rayos X digital',
+                    'Sistema de procesamiento de imágenes'
                 ],
-                details: 'Método de inmunoensayo. Tiempo: 24 horas. Detecta uso en últimos 30 días.'
+                details: 'Tiempo: 15-20 minutos. Algunos estudios requieren preparación específica. Resultados en 1-2 horas.'
             },
-            'cocaina': { 
-                title: 'Detección de Cocaína', 
-                price: 'S/ 40.00', 
-                category: 'ESTUPEFACIENTES', 
-                description: 'Test para detección de metabolitos de cocaína en orina.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
+
+            // ========== ECOGRAFÍA ==========
+            'ecografia': { 
+                title: 'Ecografía', 
+                price: 'S/ 120.00', 
+                category: 'IMAGENOLOGÍA', 
+                description: 'Estudios ecográficos con equipos de última generación. Ecografías abdominales, obstétricas, ginecológicas, de partes blandas y doppler vascular.',
+                mainImage: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=400&fit=crop',
                 equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
+                    'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=300&h=200&fit=crop',
+                    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Sistema de inmunoensayo para drogas'
+                    'Ecógrafo digital con doppler color',
+                    'Transductores multifrecuencia'
                 ],
-                details: 'Método de inmunoensayo. Tiempo: 24 horas. Detecta uso en últimos 2-4 días.'
+                details: 'Duración: 20-40 minutos. Algunos estudios requieren ayuno. Resultados inmediatos con informe escrito.'
             },
-            'benzodiacepinas': { 
-                title: 'Detección de Benzodiacepinas', 
-                price: 'S/ 40.00', 
-                category: 'ESTUPEFACIENTES', 
-                description: 'Test para detección de benzodiacepinas y metabolitos en orina.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
+
+            // ========== PSICOLOGÍA ==========
+            'psicologia': { 
+                title: 'Psicología', 
+                price: 'S/ 70.00', 
+                category: 'SALUD MENTAL', 
+                description: 'Atención psicológica profesional para niños, adolescentes y adultos. Terapia individual, familiar y de pareja. Manejo de ansiedad, depresión y problemas de adaptación.',
+                mainImage: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop',
                 equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
+                    'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Sistema de inmunoensayo para drogas'
+                    'Consultorio adecuado para terapia',
+                    'Materiales de evaluación psicológica'
                 ],
-                details: 'Método de inmunoensayo. Tiempo: 24 horas. Detecta uso reciente.'
+                details: 'Sesiones de 50-60 minutos. Confidencialidad garantizada. Primera sesión de evaluación incluida.'
             },
-            'anfetaminas': { 
-                title: 'Detección de Anfetaminas', 
-                price: 'S/ 40.00', 
-                category: 'ESTUPEFACIENTES', 
-                description: 'Test para detección de anfetaminas y metanfetaminas en orina.',
-                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
+
+            // ========== GASTROENTEROLOGÍA ==========
+            'gastroenterologia': { 
+                title: 'Consulta Gastroenterología', 
+                price: 'S/ 100.00', 
+                category: 'GASTROENTEROLOGÍA', 
+                description: 'Atención especializada en enfermedades del sistema digestivo. Diagnóstico y tratamiento de problemas gástricos, hepáticos, intestinales y pancreáticos.',
+                mainImage: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=400&fit=crop',
                 equipment: [
-                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
+                    'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Sistema de inmunoensayo para drogas'
+                    'Equipos de diagnóstico gastroenterológico'
                 ],
-                details: 'Método de inmunoensayo. Tiempo: 24 horas. Detecta uso en últimos 2-4 días.'
+                details: 'Duración: 30-45 minutos. Traer estudios previos. Evaluación completa del sistema digestivo.'
             },
-            'extasis': { 
-                title: 'Detección de Extasis', 
-                price: 'S/ 45.00', 
-                category: 'ESTUPEFACIENTES', 
-                description: 'Test para detección de MDMA (éxtasis) y metabolitos en orina.',
+
+            // ========== ENDOSCOPÍA ==========
+            'endoscopia': { 
+                title: 'Endoscopia', 
+                price: 'S/ 350.00', 
+                category: 'ENDOSCOPÍA', 
+                description: 'Estudio endoscópico del tracto digestivo superior. Visualización directa de esófago, estómago y duodeno para diagnóstico de úlceras, gastritis y tumores.',
+                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
+                equipment: [
+                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop',
+                    'https://images.unsplash.com/photo-1581094794322-7c6dceeec0e5?w=300&h=200&fit=crop'
+                ],
+                equipmentDesc: [
+                    'Videoendoscopio de alta definición',
+                    'Sistema de video y procesamiento'
+                ],
+                details: 'Duración: 20-30 minutos. Ayuno de 8 horas requerido. Sedación consciente incluida.'
+            },
+
+            // ========== COLONOSCOPÍA ==========
+            'colonoscopia': { 
+                title: 'Colonoscopia', 
+                price: 'S/ 450.00', 
+                category: 'ENDOSCOPÍA', 
+                description: 'Exploración completa del colon y recto para diagnóstico de pólipos, cáncer colorectal, enfermedad inflamatoria intestinal y otras patologías.',
                 mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
                 equipment: [
                     'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Sistema de inmunoensayo para drogas'
+                    'Colonoscopio de alta definición'
                 ],
-                details: 'Método de inmunoensayo. Tiempo: 24 horas. Detecta uso reciente.'
+                details: 'Duración: 30-45 minutos. Preparación intestinal especial requerida. Sedación incluida.'
+            },
+
+            // ========== PROCTOSCOPÍA ==========
+            'proctoscopia': { 
+                title: 'Proctoscopia', 
+                price: 'S/ 150.00', 
+                category: 'PROCTOLOGÍA', 
+                description: 'Examen del recto y canal anal para diagnóstico de hemorroides, fisuras anales, pólipos y otras patologías anorrectales.',
+                mainImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop',
+                equipment: [
+                    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop'
+                ],
+                equipmentDesc: [
+                    'Proctoscopio y anoscopio'
+                ],
+                details: 'Duración: 15-20 minutos. Preparación mínima. Sin sedación generalmente.'
             },
 
             // ========== OTROS ==========
             'otros': { 
-                title: 'Otros Estudios', 
+                title: 'Otros Servicios', 
                 price: 'Consultar', 
-                category: 'OTROS', 
-                description: 'Estudios especializados no incluidos en la lista regular. Consulte por disponibilidad.',
+                category: 'OTROS SERVICIOS', 
+                description: 'Contamos con otros servicios médicos especializados. Consulte por disponibilidad de otros procedimientos y especialidades.',
                 mainImage: 'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop',
                 equipment: [
                     'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop'
                 ],
                 equipmentDesc: [
-                    'Equipos especializados según estudio'
+                    'Equipos especializados según servicio'
                 ],
-                details: 'Contacte con nuestro laboratorio para información sobre estudios especiales.'
+                details: 'Contacte con nuestra clínica para información sobre otros servicios especiales y disponibilidad.'
             }
         };
 
@@ -2269,6 +706,15 @@
         serviceLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
+                
+                // Remover clase active de todos los enlaces
+                serviceLinks.forEach(l => {
+                    l.closest('.card-heading').classList.remove('active');
+                });
+                
+                // Agregar clase active al enlace clickeado
+                this.closest('.card-heading').classList.add('active');
+                
                 const serviceId = this.getAttribute('data-service');
                 const service = allServices[serviceId];
                 
@@ -2305,18 +751,24 @@
                 }
                 
                 // Actualizar descripción
-                const descriptionElement = document.querySelector('.services__details__text p:first-child');
-                if (descriptionElement) descriptionElement.textContent = service.description;
+                const descriptionElements = document.querySelectorAll('.services__details__text p');
+                if (descriptionElements.length > 0) {
+                    descriptionElements[0].textContent = service.description;
+                    if (descriptionElements.length > 1) {
+                        descriptionElements[1].textContent = service.details || '';
+                    }
+                }
                 
                 // Actualizar detalles del servicio
                 const detailsElement = document.querySelector('.service-details');
                 if (detailsElement) {
+                    const details = service.details || '';
                     detailsElement.innerHTML = `
                         <h4>Detalles del Servicio</h4>
-                        <p><strong>Equipo utilizado:</strong> ${service.equipmentDesc?.join(', ') || 'Equipos especializados'}</p>
-                        <p><strong>Tiempo de entrega:</strong> ${service.details?.split('Tiempo:')[1]?.split('.')[0]?.trim() || 'Consultar'}</p>
-                        <p><strong>Preparación:</strong> ${service.details?.includes('Ayuno') ? 'Ayuno requerido' : 'Consultar'}</p>
-                        <p><strong>Muestra requerida:</strong> ${service.details?.split('Muestra:')[1]?.split('.')[0]?.trim() || 'Consultar'}</p>
+                        <p><strong>Especialistas:</strong> ${service.equipmentDesc?.[0] || 'Profesionales especializados'}</p>
+                        <p><strong>Tiempo de atención:</strong> ${details.split('Duración:')[1]?.split('.')[0]?.trim() || 'Variable'}</p>
+                        <p><strong>Preparación:</strong> ${details.includes('Ayuno') ? 'Preparación específica requerida' : 'Consultar'}</p>
+                        <p><strong>Recomendaciones:</strong> ${details.split('.')[0] || 'Consultar con nuestro personal'}</p>
                     `;
                 }
                 
@@ -2324,7 +776,7 @@
                 const galleryContainer = document.querySelector('.equipment-gallery');
                 if (galleryContainer && service.equipment) {
                     galleryContainer.innerHTML = `
-                        <h4>Equipos Utilizados</h4>
+                        <h4>Equipos y Tecnología</h4>
                         <div class="row">
                             ${service.equipment.map((img, index) => `
                                 <div class="col-sm-4">
