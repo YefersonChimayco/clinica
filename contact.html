@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Aesthetic Template">
-    <meta name="keywords" content="Aesthetic, unica, creative, html">
+    <meta name="description" content="Clínica VRAEM - Contacto y Reserva de Citas">
+    <meta name="keywords" content="clínica, contacto, reserva de citas, consultas médicas, WhatsApp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clinica|Vraem</title>
+    <title>Clínica VRAEM | Contacto</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -22,15 +24,15 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos-principal.css" type="text/css">
+    
     <style>
-        .timepicker__item {
+        .clinic-timepicker__item {
             position: relative;
             margin-bottom: 20px;
         }
         
-        .timepicker__item select {
+        .clinic-timepicker__item select {
             width: 100%;
             height: 50px;
             border: 1px solid #e1e1e1;
@@ -43,7 +45,7 @@
             appearance: none;
         }
         
-        .timepicker__item i {
+        .clinic-timepicker__item i {
             position: absolute;
             right: 20px;
             top: 50%;
@@ -51,11 +53,11 @@
             color: #666;
         }
         
-        .consultation__details {
+        .clinic-consultation__details {
             margin-bottom: 20px;
         }
         
-        .consultation__details textarea {
+        .clinic-consultation__details textarea {
             width: 100%;
             height: 100px;
             border: 1px solid #e1e1e1;
@@ -67,7 +69,7 @@
             font-family: inherit;
         }
         
-        .consultation__details textarea::placeholder {
+        .clinic-consultation__details textarea::placeholder {
             color: #999;
         }
         
@@ -77,12 +79,12 @@
         }
         
         /* Ajuste de margen para el scroll */
-        #formularioConsulta {
+        #clinic-formulario-consulta {
             scroll-margin-top: 120px;
         }
         
         /* Estilos para validación de formulario */
-        .form-error {
+        .clinic-form-error {
             color: #ff6b6b;
             font-size: 12px;
             margin-top: 5px;
@@ -90,12 +92,12 @@
         }
         
         /* Estilo para el botón de carga */
-        .btn-loading {
+        .clinic-btn-loading {
             position: relative;
             color: transparent !important;
         }
         
-        .btn-loading::after {
+        .clinic-btn-loading::after {
             content: '';
             position: absolute;
             width: 20px;
@@ -107,20 +109,20 @@
             border: 2px solid #ffffff;
             border-radius: 50%;
             border-top-color: transparent;
-            animation: spin 1s ease-in-out infinite;
+            animation: clinic-spin 1s ease-in-out infinite;
         }
         
-        @keyframes spin {
+        @keyframes clinic-spin {
             to { transform: rotate(360deg); }
         }
 
         /* CORRECCIONES ESPECÍFICAS */
-        .datepicker__item {
+        .clinic-datepicker__item {
             position: relative;
             margin-bottom: 20px;
         }
         
-        .datepicker__item input {
+        .clinic-datepicker__item input {
             width: 100%;
             height: 50px;
             border: 1px solid #e1e1e1;
@@ -130,7 +132,7 @@
             border-radius: 5px;
         }
         
-        .datepicker__item i {
+        .clinic-datepicker__item i {
             position: absolute;
             right: 20px;
             top: 50%;
@@ -140,8 +142,8 @@
         }
 
         /* Asegurar consistencia en todos los campos */
-        #consultaFormContact input,
-        #consultaFormContact select {
+        #clinic-consulta-form input,
+        #clinic-consulta-form select {
             height: 50px;
             border: 1px solid #e1e1e1;
             padding: 0 20px;
@@ -152,7 +154,7 @@
             width: 100%;
         }
 
-        #consultaFormContact select {
+        #clinic-consulta-form select {
             padding-right: 45px;
         }
     </style>
@@ -165,22 +167,22 @@
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
+    <header class="clinic-header">
+        <div class="clinic-topbar">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <ul class="header__top__left">
-                            <li><i class="fa fa-phone"></i>  952 289 392</li>
+                        <ul class="clinic-topbar__left">
+                            <li><i class="fa fa-phone"></i> 952 289 392</li>
                             <li><i class="fa fa-map-marker"></i> Av. San Martin N° 841, Huanta</li>
-                            <li><i class="fa fa-clock-o"></i>Lunes a Domingo 7:00am a 8:00pm/emer-24 Horas</li>
+                            <li><i class="fa fa-clock-o"></i> Lunes a Domingo 7:00am a 8:00pm/emer-24 Horas</li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
-                        <div class="header__top__right">
+                        <div class="clinic-topbar__right">
                             <a href="https://www.facebook.com/VraemClinicaEspecializada" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
-                            <a href="./contact.html#formularioConsulta"><i class="fas fa-question-circle"></i></a>
+                            <a href="./contact.html#clinic-formulario-consulta"><i class="fas fa-question-circle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -189,20 +191,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logovr.png" alt=""></a>
+                    <div class="clinic-logo">
+                        <a href="./index.html"><img src="img/logovr.png" alt="Clínica VRAEM"></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
-                    <div class="header__menu__option">
-                        <nav class="header__menu">
+                    <div class="clinic-nav__options">
+                        <nav class="clinic-main-nav">
                             <ul>
                                 <li><a href="./index.html">Inicio</a></li>
-                                <li><a href="./about.html">nosotros</a></li>
+                                <li><a href="./about.html">Nosotros</a></li>
                                 <li><a href="./services.html">Servicios</a></li>
                                 <li><a href="#">Equipos</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./pricing.html">Tecnologia Medica </a></li>
+                                    <ul class="clinic-dropdown">
+                                        <li><a href="./pricing.html">Tecnologia Medica</a></li>
                                         <li><a href="./doctor.html">Staf Medico</a></li>
                                         <li><a href="./blog-details.html">Detalles</a></li>
                                     </ul>
@@ -211,8 +213,8 @@
                                 <li class="active"><a href="./contact.html">Contactanos</a></li>
                             </ul>
                         </nav>
-                        <div class="header__btn">
-                            <a href="./contact.html#formularioConsulta" class="primary-btn">Consultas</a>
+                        <div class="clinic-header__btn">
+                            <a href="./contact.html#clinic-formulario-consulta" class="primary-btn">Consultas</a>
                         </div>
                     </div>
                 </div>
@@ -225,13 +227,13 @@
     <!-- Header Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-option spad set-bg" data-setbg="img/about1.png">
+    <section class="clinic-breadcrumb spad set-bg" data-setbg="img/about1.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
+                    <div class="clinic-breadcrumb__text">
                         <h2>Contactanos</h2>
-                        <div class="breadcrumb__links">
+                        <div class="clinic-breadcrumb__links">
                             <a href="./index.html">Inicio</a>
                             <span>Contactanos</span>
                         </div>
@@ -243,74 +245,74 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Contact Section Begin -->
-    <section class="contact spad">
+    <section class="clinic-contact spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="contact__widget">
-                        <div class="contact__widget__icon">
+                    <div class="clinic-contact__widget">
+                        <div class="clinic-contact__widget__icon">
                             <i class="fa fa-map-marker" style="color: #7B2CBF;"></i>
                         </div>
-                        <div class="contact__widget__text">
+                        <div class="clinic-contact__widget__text">
                             <h5>Dirección</h5>
-                            <p>Av. San Martin N° 879</p>
+                            <p>Av. San Martin N° 879, Huanta</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="contact__widget">
-                        <div class="contact__widget__icon">
+                    <div class="clinic-contact__widget">
+                        <div class="clinic-contact__widget__icon">
                             <i class="fa fa-phone" style="color: #7B2CBF;"></i>
                         </div>
-                        <div class="contact__widget__text">
+                        <div class="clinic-contact__widget__text">
                             <h5>Teléfono Celular</h5>
-                            <p>995 992 426</p>
+                            <p>952 289 392</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="contact__widget">
-                        <div class="contact__widget__icon">
+                    <div class="clinic-contact__widget">
+                        <div class="clinic-contact__widget__icon">
                             <i class="fa fa-envelope" style="color: #7B2CBF;"></i>
                         </div>
-                        <div class="contact__widget__text">
+                        <div class="clinic-contact__widget__text">
                             <h5>Correo Electrónico</h5>
                             <p>clinicavraem@gmail.com</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contact__content">
+            <div class="clinic-contact__content">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <div class="contact__pic">
-                            <img src="img/contact-pic.jpg" alt="">
+                        <div class="clinic-contact__pic">
+                            <img src="img/contact-pic.jpg" alt="Clínica VRAEM - Contacto">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <!-- FORMULARIO CON ID PARA EL ANCLA -->
-                        <div class="contact__form" id="formularioConsulta">
+                        <div class="clinic-contact__form" id="clinic-formulario-consulta">
                             <h3>Solicitar Consulta</h3>
-                            <form id="consultaFormContact">
-                                <input type="text" id="nombresContact" placeholder="Apellidos y Nombres" required>
-                                <div class="form-error" id="errorNombres">Por favor ingrese sus apellidos y nombres completos</div>
+                            <form id="clinic-consulta-form">
+                                <input type="text" id="clinic-nombres-contacto" placeholder="Apellidos y Nombres" required>
+                                <div class="clinic-form-error" id="clinic-error-nombres">Por favor ingrese sus apellidos y nombres completos</div>
                                 
-                                <input type="text" id="dniContact" placeholder="DNI" 
+                                <input type="text" id="clinic-dni-contacto" placeholder="DNI" 
                                        maxlength="8" 
                                        pattern="[0-9]{8}"
                                        title="El DNI debe contener exactamente 8 números"
                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                                        required>
-                                <div class="form-error" id="errorDni">El DNI debe contener exactamente 8 números</div>
+                                <div class="clinic-form-error" id="clinic-error-dni">El DNI debe contener exactamente 8 números</div>
                                 
-                                <div class="datepicker__item">
-                                    <input type="text" id="fechaContact" placeholder="Fecha Para la cita" class="datepicker" required>
+                                <div class="clinic-datepicker__item">
+                                    <input type="text" id="clinic-fecha-contacto" placeholder="Fecha Para la cita" class="datepicker" required>
                                     <i class="fa fa-calendar"></i>
                                 </div>
-                                <div class="form-error" id="errorFecha">Por favor seleccione una fecha</div>
+                                <div class="clinic-form-error" id="clinic-error-fecha">Por favor seleccione una fecha</div>
                                 
-                                <div class="timepicker__item">
-                                    <select id="horaContact" required>
+                                <div class="clinic-timepicker__item">
+                                    <select id="clinic-hora-contacto" required>
                                         <option value="">Seleccione la hora</option>
                                         <option value="07:00 AM">07:00 AM</option>
                                         <option value="08:00 AM">08:00 AM</option>
@@ -326,9 +328,9 @@
                                     </select>
                                     <i class="fa fa-clock-o"></i>
                                 </div>
-                                <div class="form-error" id="errorHora">Por favor seleccione una hora</div>
+                                <div class="clinic-form-error" id="clinic-error-hora">Por favor seleccione una hora</div>
                                 
-                                <select id="servicioContact" required>
+                                <select id="clinic-servicio-contacto" required>
                                     <option value="">Tipo de Servicio</option>
                                     <option value="Hematologia">Hematologia</option>
                                     <option value="Hemostasia">Hemostasia</option>
@@ -344,13 +346,13 @@
                                     <option value="Marcadores Tumorales">Marcadores Tumorales</option>
                                     <option value="Otro">Otro (especificar abajo)</option>
                                 </select>
-                                <div class="form-error" id="errorServicio">Por favor seleccione un servicio</div>
+                                <div class="clinic-form-error" id="clinic-error-servicio">Por favor seleccione un servicio</div>
                                 
-                                <div class="consultation__details">
-                                    <textarea id="detallesContact" placeholder="Detalles adicionales de la consulta (síntomas, motivo específico, observaciones)"></textarea>
+                                <div class="clinic-consultation__details">
+                                    <textarea id="clinic-detalles-contacto" placeholder="Detalles adicionales de la consulta (síntomas, motivo específico, observaciones)"></textarea>
                                 </div>
                                 
-                                <button type="submit" class="site-btn" id="submitBtn">Reservar cita por WhatsApp</button>
+                                <button type="submit" class="site-btn" id="clinic-submit-btn">Reservar cita por WhatsApp</button>
                             </form>
                         </div>
                     </div>
@@ -361,28 +363,28 @@
     <!-- Contact Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="footer__top">
+    <footer class="clinic-footer">
+        <div class="clinic-footer__top">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
-                        <div class="footer__logo">
-                            <a href="#"><img src="img/logovr.png" alt=""></a>
+                        <div class="clinic-footer__logo">
+                            <a href="./index.html"><img src="img/logosvr.png" alt="Clínica VRAEM"></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8">
-                        <div class="footer__newslatter">
-                            <form action="./contact.html#formularioConsulta">
-                                <input type="text" placeholder="Consultas">
+                        <div class="clinic-footer__newsletter">
+                            <form action="./contact.html#clinic-formulario-consulta">
+                                <input type="text" placeholder="Escribe tu consulta..." name="consulta">
                                 <button type="submit" class="site-btn">Contactarse</button>
                             </form>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="footer__social">
+                        <div class="clinic-footer__social">
                             <a href="https://www.facebook.com/VraemClinicaEspecializada" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
-                            <a href="./contact.html#formularioConsulta"><i class="fas fa-question-circle"></i></a>
+                            <a href="./contact.html#clinic-formulario-consulta"><i class="fas fa-question-circle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -391,7 +393,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
+                    <div class="clinic-footer__widget">
                         <h5>Clinica Vraem</h5>
                         <ul>
                             <li><a href="./about.html">Nosotros</a></li>
@@ -403,29 +405,29 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
+                    <div class="clinic-footer__widget">
                         <h5>Nuestros Servicios</h5>
                         <ul>
                             <li><a href="./services.html">Gastroenterología</a></li>
                             <li><a href="./services.html">Traumatología</a></li>
                             <li><a href="./services.html">Urología</a></li>
                             <li><a href="./services.html">Ginecología</a></li>
-                            <li><a href="./services.html">Rinoplastia</a></li>
+                            <li><a href="./services.html">Laboratorio Clínico</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__address">
+                    <div class="clinic-footer__address">
                         <h5>Contactanos</h5>
                         <ul>
-                            <li><i class="fa fa-map-marker"></i> Av. San Martin N° 871</li>
-                            <li><i class="fa fa-phone"></i> 995 992 426</li>
+                            <li><i class="fa fa-map-marker"></i> Av. San Martin N° 871, Huanta</li>
+                            <li><i class="fa fa-phone"></i> 952 289 392</li>
                             <li><i class="fa fa-envelope"></i> clinicavraem@gmail.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-6">
-                    <div class="footer__map">
+                    <div class="clinic-footer__map">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!4v1759619099261!6m8!1m7!1sZmWTAzexB7ZtZ9uFX56PAg!2m2!1d-12.9460415853329!2d-74.24293245327512!3f137.42006!4f0!5f0.7820865974627469" 
                             height="190" 
@@ -438,11 +440,11 @@
                 </div>
             </div>
         </div>
-        <div class="footer__copyright">
+        <div class="clinic-footer__copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <div class="footer__copyright__text">
+                        <div class="clinic-footer__copyright-text">
                             <p>
                                 © <script>document.write(new Date().getFullYear());</script> 
                                 <strong>Clínica Especializada VRAEM</strong>. Todos los derechos reservados.<br>
@@ -451,10 +453,10 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <ul style="list-style: none; display: flex; gap: 15px; justify-content: flex-end; padding: 0; margin: 0;">
-                            <li><a href="#" style="text-decoration: none; color: inherit;">Aviso Legal</a></li>
-                            <li><a href="#" style="text-decoration: none; color: inherit;">Términos de Uso</a></li>
-                            <li><a href="#" style="text-decoration: none; color: inherit;">Política de Privacidad</a></li>
+                        <ul class="clinic-footer__links">
+                            <li><a href="#">Aviso Legal</a></li>
+                            <li><a href="#">Términos de Uso</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
                         </ul>
                     </div>
                 </div>
@@ -477,43 +479,43 @@
     <!-- Script corregido para enviar a WhatsApp -->
     <script>
         // Función para validar el formulario
-        function validarFormulario() {
+        function clinicValidarFormulario() {
             let isValid = true;
             
             // Ocultar todos los mensajes de error
-            document.querySelectorAll('.form-error').forEach(function(error) {
+            document.querySelectorAll('.clinic-form-error').forEach(function(error) {
                 error.style.display = 'none';
             });
             
             // Validar cada campo
-            const nombres = document.getElementById('nombresContact').value.trim();
-            const dni = document.getElementById('dniContact').value;
-            const fecha = document.getElementById('fechaContact').value.trim();
-            const hora = document.getElementById('horaContact').value;
-            const servicio = document.getElementById('servicioContact').value;
+            const nombres = document.getElementById('clinic-nombres-contacto').value.trim();
+            const dni = document.getElementById('clinic-dni-contacto').value;
+            const fecha = document.getElementById('clinic-fecha-contacto').value.trim();
+            const hora = document.getElementById('clinic-hora-contacto').value;
+            const servicio = document.getElementById('clinic-servicio-contacto').value;
             
             if (!nombres) {
-                document.getElementById('errorNombres').style.display = 'block';
+                document.getElementById('clinic-error-nombres').style.display = 'block';
                 isValid = false;
             }
             
             if (!dni || dni.length !== 8) {
-                document.getElementById('errorDni').style.display = 'block';
+                document.getElementById('clinic-error-dni').style.display = 'block';
                 isValid = false;
             }
             
             if (!fecha) {
-                document.getElementById('errorFecha').style.display = 'block';
+                document.getElementById('clinic-error-fecha').style.display = 'block';
                 isValid = false;
             }
             
             if (!hora) {
-                document.getElementById('errorHora').style.display = 'block';
+                document.getElementById('clinic-error-hora').style.display = 'block';
                 isValid = false;
             }
             
             if (!servicio) {
-                document.getElementById('errorServicio').style.display = 'block';
+                document.getElementById('clinic-error-servicio').style.display = 'block';
                 isValid = false;
             }
             
@@ -521,14 +523,14 @@
         }
         
         // Función para enviar a WhatsApp
-        function enviarWhatsApp() {
+        function clinicEnviarWhatsApp() {
             // Obtener los valores del formulario
-            const nombres = document.getElementById('nombresContact').value;
-            const dni = document.getElementById('dniContact').value;
-            const fecha = document.getElementById('fechaContact').value;
-            const hora = document.getElementById('horaContact').value;
-            const servicio = document.getElementById('servicioContact').value;
-            const detalles = document.getElementById('detallesContact').value;
+            const nombres = document.getElementById('clinic-nombres-contacto').value;
+            const dni = document.getElementById('clinic-dni-contacto').value;
+            const fecha = document.getElementById('clinic-fecha-contacto').value;
+            const hora = document.getElementById('clinic-hora-contacto').value;
+            const servicio = document.getElementById('clinic-servicio-contacto').value;
+            const detalles = document.getElementById('clinic-detalles-contacto').value;
             
             // Crear el mensaje para WhatsApp
             let mensaje = `Hola, quisiera reservar una cita en Clínica VRAEM:\n\n` +
@@ -559,63 +561,63 @@
             
             // Restaurar el botón después de 2 segundos
             setTimeout(function() {
-                document.getElementById('submitBtn').classList.remove('btn-loading');
-                document.getElementById('submitBtn').disabled = false;
-                document.getElementById('submitBtn').textContent = 'Reservar cita por WhatsApp';
+                document.getElementById('clinic-submit-btn').classList.remove('clinic-btn-loading');
+                document.getElementById('clinic-submit-btn').disabled = false;
+                document.getElementById('clinic-submit-btn').textContent = 'Reservar cita por WhatsApp';
                 
                 // Limpiar el formulario
-                document.getElementById('consultaFormContact').reset();
+                document.getElementById('clinic-consulta-form').reset();
             }, 2000);
         }
         
         // Event listener para el formulario
-        document.getElementById('consultaFormContact').addEventListener('submit', function(e) {
+        document.getElementById('clinic-consulta-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
             // Validar el formulario
-            if (validarFormulario()) {
+            if (clinicValidarFormulario()) {
                 // Mostrar estado de carga en el botón
-                const submitBtn = document.getElementById('submitBtn');
-                submitBtn.classList.add('btn-loading');
+                const submitBtn = document.getElementById('clinic-submit-btn');
+                submitBtn.classList.add('clinic-btn-loading');
                 submitBtn.disabled = true;
                 submitBtn.textContent = 'Enviando...';
                 
                 // Enviar a WhatsApp después de una breve pausa
-                setTimeout(enviarWhatsApp, 1000);
+                setTimeout(clinicEnviarWhatsApp, 1000);
             }
         });
         
         // Event listeners para validación en tiempo real
-        document.getElementById('nombresContact').addEventListener('input', function() {
+        document.getElementById('clinic-nombres-contacto').addEventListener('input', function() {
             if (this.value.trim()) {
-                document.getElementById('errorNombres').style.display = 'none';
+                document.getElementById('clinic-error-nombres').style.display = 'none';
             }
         });
         
-        document.getElementById('dniContact').addEventListener('input', function() {
+        document.getElementById('clinic-dni-contacto').addEventListener('input', function() {
             if (this.value.length === 8) {
-                document.getElementById('errorDni').style.display = 'none';
+                document.getElementById('clinic-error-dni').style.display = 'none';
             }
         });
         
-        document.getElementById('horaContact').addEventListener('change', function() {
+        document.getElementById('clinic-hora-contacto').addEventListener('change', function() {
             if (this.value) {
-                document.getElementById('errorHora').style.display = 'none';
+                document.getElementById('clinic-error-hora').style.display = 'none';
             }
         });
         
-        document.getElementById('servicioContact').addEventListener('change', function() {
+        document.getElementById('clinic-servicio-contacto').addEventListener('change', function() {
             if (this.value) {
-                document.getElementById('errorServicio').style.display = 'none';
+                document.getElementById('clinic-error-servicio').style.display = 'none';
             }
         });
         
         // Script para manejar el scroll al ancla
         document.addEventListener('DOMContentLoaded', function() {
-            // Si la URL tiene el hash #formularioConsulta, hacer scroll automáticamente
-            if (window.location.hash === '#formularioConsulta') {
+            // Si la URL tiene el hash #clinic-formulario-consulta, hacer scroll automáticamente
+            if (window.location.hash === '#clinic-formulario-consulta') {
                 setTimeout(function() {
-                    const element = document.getElementById('formularioConsulta');
+                    const element = document.getElementById('clinic-formulario-consulta');
                     if (element) {
                         element.scrollIntoView({ behavior: 'smooth' });
                     }
@@ -632,5 +634,4 @@
         });
     </script>
 </body>
-
 </html>

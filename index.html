@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Aesthetic Template">
-    <meta name="keywords" content="Aesthetic, unica, creative, html">
+    <meta name="description" content="Clinica VRAEM Template">
+    <meta name="keywords" content="Clinica, VRAEM, salud, medicina">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clinica|Vraem</title>
+    <title>Clinica | Vraem</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos-principal.css" type="text/css">
     <style>
         .timepicker__item {
             position: relative;
@@ -133,29 +133,27 @@
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
+    <header class="clinic-header">
+        <div class="clinic-topbar">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <ul class="header__top__left">
+                        <ul class="clinic-topbar__left">
                             <li><i class="fa fa-phone"></i> 952 289 392</li>
                             <li><i class="fa fa-map-marker"></i> Av. San Martin N° 871, Huanta</li>
                             <li><i class="fa fa-clock-o"></i>Lunes a Domingo 7:00am a 8:00pm/emer-24 Horas</li>
                         </ul>
                     </div>
-                    <!-- Agregar en el <head> -->
                     <link rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
                     <div class="col-lg-4">
-                        <div class="header__top__right">
+                        <div class="clinic-topbar__right">
                             <a href="https://www.facebook.com/VraemClinicaEspecializada" target="_blank"
                                 rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i
                                     class="fab fa-whatsapp"></i></a>
                             <a href="./contact.html#formularioConsulta"><i class="fas fa-question-circle"></i></a>
-
                         </div>
                     </div>
                 </div>
@@ -164,20 +162,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logovr.png" alt=""></a>
+                    <div class="clinic-logo">
+                        <a href="./index.html"><img src="img/logovr.png" alt="Clinica VRAEM"></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
-                    <div class="header__menu__option">
-                        <nav class="header__menu">
+                    <div class="clinic-nav__options">
+                        <nav class="clinic-main-nav">
                             <ul>
-                                <li class="active"><a href="./index.html">Inicio</a></li>
-                                <li><a href="./about.html">nosotros</a></li>
+                                <li class="clinic-nav-active"><a href="./index.html">Inicio</a></li>
+                                <li><a href="./about.html">Nosotros</a></li>
                                 <li><a href="./services.html">Servicios</a></li>
                                 <li><a href="#">Equipos</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./pricing.html">Tecnologia Medica </a></li>
+                                    <ul class="clinic-dropdown">
+                                        <li><a href="./pricing.html">Tecnologia Medica</a></li>
                                         <li><a href="./doctor.html">Staf Medico</a></li>
                                         <li><a href="./blog-details.html">Detalles</a></li>
                                     </ul>
@@ -186,7 +184,7 @@
                                 <li><a href="./contact.html">Contactanos</a></li>
                             </ul>
                         </nav>
-                        <div class="header__btn">
+                        <div class="clinic-header__btn">
                             <a href="./contact.html#formularioConsulta" class="primary-btn">Consultas</a>
                         </div>
                     </div>
@@ -200,11 +198,11 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero spad set-bg" data-setbg="img/cd.png">
+    <section class="clinic-hero spad set-bg" data-setbg="img/cd.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="hero__text">
+                    <div class="clinic-hero__text">
                         <span>Te cuidamos dandote una </span>
                         <h2>Atención de alta calidad</h2>
                         <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"
@@ -217,11 +215,11 @@
     <!-- Hero Section End -->
 
     <!-- Consultation Section Begin -->
-    <section class="consultation">
+    <section class="clinic-consultation">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="consultation__form">
+                    <div class="clinic-consultation__form">
                         <div class="section-title">
                             <span>REQUISITOS PARA LA </span>
                             <h2>Cita</h2>
@@ -238,7 +236,6 @@
                                 <i class="fa fa-calendar"></i>
                             </div>
 
-                            <!-- Nuevo campo para la hora -->
                             <div class="timepicker__item">
                                 <select id="hora" required>
                                     <option value="">Seleccione la hora</option>
@@ -272,7 +269,6 @@
                                 <option value="Otro">Otro (especificar abajo)</option>
                             </select>
 
-                            <!-- Campo adicional para consultas específicas -->
                             <div class="consultation__details">
                                 <textarea id="detalles"
                                     placeholder="Detalles adicionales de la consulta (síntomas, motivo específico, observaciones)"></textarea>
@@ -283,12 +279,12 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="consultation__text">
+                    <div class="clinic-consultation__text">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="consultation__text__item">
                                     <div class="section-title">
-                                        <span>BienBenido a la Clinica Vraem</span>
+                                        <span>Bienvenido a la Clinica Vraem</span>
                                         <h2>Cuenta con medicos <b>Especializados</b></h2>
                                     </div>
                                     <p>BIENVENIDOS A VRAEM Clínica Especializada, en nuestra clinica ,nos dedicamos a
@@ -298,8 +294,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
-                                <div class="consultation__video">
-                                    <!-- Reel de Facebook -->
+                                <div class="clinic-consultation__video">
                                     <div class="facebook-reel-container">
                                         <iframe 
                                             src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F634400469471477&show_text=false&width=560&t=0" 
@@ -330,52 +325,48 @@
     </section>
     <!-- Consultation Section End -->
 
-    <!-- El resto de las secciones se mantienen igual -->
     <!-- Chooseus Section Begin -->
-    <section class="chooseus spad">
+    <section class="clinic-chooseus spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <span>¿ Por que elejirnos ?</span>
+                        <span>¿Por que elegirnos?</span>
                         <h2>Todo lo que Ofrecemos</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-1.png" alt="">
+                    <div class="clinic-chooseus__item">
+                        <img src="img/icons/ci-1.png" alt="Equipo Avanzado">
                         <h5>Equipo Avanzado</h5>
                         <p>Contamos con tecnología médica de última generación para brindarte diagnósticos precisos y
-                            tratamientos eficaces. Nuestros equipos garantizan una atención moderna, segura y confiable
-                            para tu salud</p>
+                            tratamientos eficaces.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-2.png" alt="">
+                    <div class="clinic-chooseus__item">
+                        <img src="img/icons/ci-2.png" alt="Medicos Calificados">
                         <h5>Medicos Calificados</h5>
-                        <p>Nuestro staff está conformado por profesionales altamente capacitados, con amplia experiencia
-                            en diferentes especialidades médicas, comprometidos con ofrecerte una atención personalizada
-                            y de calidad.</p>
+                        <p>Nuestro staff está conformado por profesionales altamente capacitados con amplia experiencia
+                            en diferentes especialidades médicas.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-3.png" alt="">
+                    <div class="clinic-chooseus__item">
+                        <img src="img/icons/ci-3.png" alt="Servicios Certificados">
                         <h5>Servicios Certificados</h5>
                         <p>Todos nuestros servicios cumplen con estándares de calidad y seguridad. Contamos con
-                            certificaciones que respaldan nuestro compromiso con el bienestar y la confianza de nuestros
-                            pacientes.</p>
+                            certificaciones que respaldan nuestro compromiso.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="chooseus__item">
-                        <img src="img/icons/ci-4.png" alt="">
+                    <div class="clinic-chooseus__item">
+                        <img src="img/icons/ci-4.png" alt="Atención de Emergencias">
                         <h5>Atención de Emergencias</h5>
                         <p>Disponemos de un servicio de emergencia las 24 horas del día, los 7 días de la semana, para
-                            atender cualquier situación urgente con rapidez, eficiencia y cuidado profesional.</p>
+                            atender cualquier situación urgente.</p>
                     </div>
                 </div>
             </div>
@@ -384,7 +375,7 @@
     <!-- Chooseus Section End -->
 
     <!-- Services Section Begin -->
-    <section class="services spad set-bg" data-setbg="img/services-bg.jpg">
+    <section class="clinic-services spad set-bg" data-setbg="img/services-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-6">
@@ -395,57 +386,52 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="services__btn">
-                        <a href="#" class="primary-btn">Contactanos</a>
+                        <a href="./contact.html" class="primary-btn">Contactanos</a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <div class="services__item">
-                        <div class="services__item__icon">
+                    <div class="clinic-services__item">
+                        <div class="clinic-services__item__icon">
                             <span class="flaticon-044-aesthetic"></span>
                         </div>
-                        <div class="services__item__text">
+                        <div class="clinic-services__item__text">
                             <h5>🏥 Medicina General</h5>
-                            <P>
-                                Atención médica integral para prevenir y tratar diversas enfermedades.
-                            </P>
+                            <p>Atención médica integral para prevenir y tratar diversas enfermedades.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="services__item">
-                        <div class="services__item__icon">
+                    <div class="clinic-services__item">
+                        <div class="clinic-services__item__icon">
                             <span class="flaticon-027-beauty"></span>
                         </div>
-                        <div class="services__item__text">
-                            <h5>💆‍♀️ Procedimientos Faciales </h5>
-                            <p>
-                                Tratamientos estéticos y clínicos para rejuvenecer y cuidar tu rostro.
+                        <div class="clinic-services__item__text">
+                            <h5>💆‍♀️ Procedimientos Faciales</h5>
+                            <p>Tratamientos estéticos y clínicos para rejuvenecer y cuidar tu rostro.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="services__item">
-                        <div class="services__item__icon">
+                    <div class="clinic-services__item">
+                        <div class="clinic-services__item__icon">
                             <span class="flaticon-031-anatomy"></span>
                         </div>
-                        <div class="services__item__text">
+                        <div class="clinic-services__item__text">
                             <h5>🩺 Procedimientos de Mama</h5>
-                            <p>
-                                Evaluaciones y cuidados especializados para tu salud mamaria. </p>
+                            <p>Evaluaciones y cuidados especializados para tu salud mamaria.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="services__item">
-                        <div class="services__item__icon">
+                    <div class="clinic-services__item">
+                        <div class="clinic-services__item__icon">
                             <span class="flaticon-008-abdominoplasty"></span>
                         </div>
-                        <div class="services__item__text">
+                        <div class="clinic-services__item__text">
                             <h5>🧪 Laboratorio Clínico</h5>
-                            <p>
-                                Análisis confiables para un diagnóstico preciso y seguimiento médico. </p>
+                            <p>Análisis confiables para un diagnóstico preciso y seguimiento médico.</p>
                         </div>
                     </div>
                 </div>
@@ -455,26 +441,25 @@
     <!-- Services Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="footer__top">
+    <footer class="clinic-footer">
+        <div class="clinic-footer__top">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
-                        <div class="footer__logo">
-                            <a href="#"><img src="img/logosvr.png" alt=""></a>
+                        <div class="clinic-footer__logo">
+                            <a href="#"><img src="img/logosvr.png" alt="Clinica VRAEM"></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8">
-                        <div class="footer__newslatter">
+                        <div class="clinic-footer__newslatter">
                             <form action="./contact.html#formularioConsulta">
-                                <input type="text" placeholder="Consultas">
+                                <input type="text" placeholder="Escribe tu consulta..." name="consulta">
                                 <button type="submit" class="site-btn">Contactarse</button>
                             </form>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-12">
-                        <div class="footer__social">
+                        <div class="clinic-footer__social">
                             <a href="https://www.facebook.com/VraemClinicaEspecializada" target="_blank"
                                 rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i
@@ -488,31 +473,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
+                    <div class="clinic-footer__widget">
                         <h5>Clinica Vraem</h5>
                         <ul>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Equipos</a></li>
-                            <li><a href="#">Staff Medico</a></li>
-                            <li><a href="#">Contacto</a></li>
-                            <li><a href="#">Servicios</a></li>
+                            <li><a href="./about.html">Nosotros</a></li>
+                            <li><a href="./pricing.html">Equipos</a></li>
+                            <li><a href="./doctor.html">Staff Medico</a></li>
+                            <li><a href="./contact.html">Contacto</a></li>
+                            <li><a href="./services.html">Servicios</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
+                    <div class="clinic-footer__widget">
                         <h5>Nuestros Servicios</h5>
                         <ul>
-                            <li><a href="#">Gastroenterología</a></li>
-                            <li><a href="#">Traumatología</a></li>
-                            <li><a href="#">Urología</a></li>
-                            <li><a href="#">Ginecología</a></li>
-                            <li><a href="#">Laboratorio Clínico</a></li>
+                            <li><a href="./services.html">Gastroenterología</a></li>
+                            <li><a href="./services.html">Traumatología</a></li>
+                            <li><a href="./services.html">Urología</a></li>
+                            <li><a href="./services.html">Ginecología</a></li>
+                            <li><a href="./services.html">Laboratorio Clínico</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__address">
+                    <div class="clinic-footer__address">
                         <h5>Contactanos</h5>
                         <ul>
                             <li><i class="fa fa-map-marker"></i> Av. San Martin N° 871, Huanta</li>
@@ -522,7 +507,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-6">
-                    <div class="footer__map">
+                    <div class="clinic-footer__map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!4v1759619099261!6m8!1m7!1sZmWTAzexB7ZtZ9uFX56PAg!2m2!1d-12.9460415853329!2d-74.24293245327512!3f137.42006!4f0!5f0.7820865974627469"
                             height="190" style="border:0; width:100%;" allowfullscreen="" loading="lazy"
@@ -532,7 +517,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer__copyright">
+        <div class="clinic-footer__copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">

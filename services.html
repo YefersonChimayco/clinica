@@ -22,25 +22,25 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos-principal.css" type="text/css">
     <style>
-        .equipment-gallery {
+        .clinic-equipment-gallery {
             margin-top: 30px;
         }
-        .equipment-gallery img {
+        .clinic-equipment-gallery img {
             border-radius: 8px;
             transition: transform 0.3s ease;
         }
-        .equipment-gallery img:hover {
+        .clinic-equipment-gallery img:hover {
             transform: scale(1.05);
         }
-        .service-details {
+        .clinic-service-details {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
             margin-top: 20px;
         }
-        .service-error {
+        .clinic-service-error {
             background: #ffe6e6;
             color: #d63031;
             padding: 15px;
@@ -48,24 +48,24 @@
             margin: 10px 0;
             border-left: 4px solid #d63031;
         }
-        .card-heading.active a {
+        .clinic-card-heading.active a {
             color: #3498db;
             font-weight: 600;
         }
-        .service-icon {
+        .clinic-service-icon {
             margin-right: 10px;
             width: 20px;
             text-align: center;
             color: #3498db;
         }
         /* Estilos para las flechas del acordeón */
-        .card-heading a {
+        .clinic-card-heading a {
             position: relative;
             display: block;
             padding-right: 30px;
         }
-        .card-heading a::after {
-            content: '\f105'; /* Flecha hacia la derecha de Font Awesome */
+        .clinic-card-heading a::after {
+            content: '\f105';
             font-family: 'FontAwesome';
             position: absolute;
             right: 15px;
@@ -73,8 +73,8 @@
             transform: translateY(-50%);
             transition: transform 0.3s ease;
         }
-        .card-heading.active a::after {
-            content: '\f101'; /* Flecha hacia la derecha cuando está activo */
+        .clinic-card-heading.active a::after {
+            content: '\f101';
             transform: translateY(-50%) rotate(0deg);
         }
     </style>
@@ -86,44 +86,22 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
-        </div>
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__btn">
-            <a href="#" class="primary-btn">Appointment</a>
-        </div>
-        <ul class="offcanvas__widget">
-            <li><i class="fa fa-phone"></i> 1-677-124-44227</li>
-            <li><i class="fa fa-map-marker"></i> Los Angeles Gournadi, 1230 Bariasl</li>
-            <li><i class="fa fa-clock-o"></i> Mon to Sat 9:00am to 18:00pm</li>
-        </ul>
-        <div class="offcanvas__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-dribbble"></i></a>
-        </div>
-    </div>
-    <!-- Offcanvas Menu End -->
+  
 
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
+    <header class="clinic-header">
+        <div class="clinic-topbar">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <ul class="header__top__left">
+                        <ul class="clinic-topbar__left">
                             <li><i class="fa fa-phone"></i>  952 289 392</li>
                             <li><i class="fa fa-map-marker"></i> Av. San Martin N° 841, Huanta</li>
                             <li><i class="fa fa-clock-o"></i>Lunes a Domingo 7:00am a 8:00pm/emer-24 Horas</li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
-                        <div class="header__top__right">
+                        <div class="clinic-topbar__right">
                             <a href="https://www.facebook.com/VraemClinicaEspecializada" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
                             <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i></a>
                             <a href="./contact.html#formularioConsulta"><i class="fa fa-question-circle"></i></a>
@@ -135,19 +113,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    <div class="header__logo">
+                    <div class="clinic-logo">
                         <a href="./index.html"><img src="img/logovr.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
-                    <div class="header__menu__option">
-                        <nav class="header__menu">
+                    <div class="clinic-nav__options">
+                        <nav class="clinic-main-nav">
                             <ul>
                                 <li ><a href="./index.html">Inicio</a></li>
                                 <li ><a href="./about.html">nosotros</a></li>
                                 <li class="active"><a href="./services.html">Servicios</a></li>
                                 <li><a href="#">Equipo</a>
-                                    <ul class="dropdown">
+                                    <ul class="clinic-dropdown">
                                         <li><a href="./pricing.html">Tecnologia Medica</a></li>
                                         <li><a href="./doctor.html">Staf Medico</a></li>
                                         <li><a href="./blog-details.html">Detalles</a></li>
@@ -157,7 +135,7 @@
                                 <li><a href="./contact.html">Contactanos</a></li>
                             </ul>
                         </nav>
-                        <div class="header__btn">
+                        <div class="clinic-header__btn">
                             <a href="#" class="primary-btn">Consultas</a>
                         </div>
                     </div>
@@ -171,13 +149,13 @@
     <!-- Header Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-option spad set-bg" data-setbg="img/about1.png">
+    <section class="clinic-breadcrumb spad set-bg" data-setbg="img/about1.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
+                    <div class="clinic-breadcrumb__text">
                         <h2>Nuestro Servicios</h2>
-                        <div class="breadcrumb__links">
+                        <div class="clinic-breadcrumb__links">
                             <a href="./index.html">Inicio</a>
                             <span>Servicios</span>
                         </div>
@@ -189,20 +167,20 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Services Section Begin -->
-    <section class="services-page spad">
+    <section class="clinic-services-page spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 order-lg-2">
-                    <div class="services__details">
+                    <div class="clinic-services__details">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="services__details__title">
+                                <div class="clinic-services__title">
                                     <span>LABORATORIO</span>
                                     <h3>Laboratorio Clínico</h3>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="services__details__widget">
+                                <div class="clinic-services__widget">
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -214,15 +192,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="services__details__pic">
+                        <div class="clinic-services__pic">
                             <img src="https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=600&h=400&fit=crop" alt="Laboratorio Clínico">
                         </div>
-                        <div class="services__details__text">
+                        <div class="clinic-services__text">
                             <p>Servicios completos de laboratorio clínico con análisis hematológicos, bioquímicos, microbiología y más. Contamos con tecnología de última generación para resultados precisos y confiables.</p>
                             <p>Realizamos más de 100 tipos de análisis diferentes con equipos automatizados y personal especializado.</p>
                         </div>
 
-                        <div class="service-details">
+                        <div class="clinic-service-details">
                             <h4>Detalles del Servicio</h4>
                             <p><strong>Especialistas:</strong> Bioquímicos, Tecnólogos Médicos</p>
                             <p><strong>Tiempo de entrega:</strong> Variable según el estudio (4-48 horas)</p>
@@ -230,23 +208,23 @@
                             <p><strong>Muestra requerida:</strong> Sangre, orina, heces, etc.</p>
                         </div>
 
-                        <div class="equipment-gallery">
+                        <div class="clinic-equipment-gallery">
                             <h4>Nuestros Equipos de Laboratorio</h4>
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="services__details__item__pic">
+                                    <div class="clinic-services__item__pic">
                                         <img src="https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop" alt="Analizadores Automatizados">
                                         <p>Analizadores hematológicos automatizados</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="services__details__item__pic">
+                                    <div class="clinic-services__item__pic">
                                         <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop" alt="Microscopios">
                                         <p>Microscopios de alta resolución</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="services__details__item__pic">
+                                    <div class="clinic-services__item__pic">
                                         <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop" alt="Centrífugas">
                                         <p>Centrífugas y equipos de procesamiento</p>
                                     </div>
@@ -254,11 +232,11 @@
                             </div>
                         </div>
 
-                        <div class="services__details__desc">
+                        <div class="clinic-services__desc">
                             <p>Nuestro laboratorio cuenta con tecnología de vanguardia y personal altamente calificado para garantizar la máxima precisión en todos los análisis. Los equipos son calibrados diariamente y sometidos a estrictos controles de calidad.</p>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <ul class="services__details__feature">
+                                    <ul class="clinic-services__feature">
                                         <li><i class="fa fa-check-circle"></i> Más de 100 análisis disponibles</li>
                                         <li><i class="fa fa-check-circle"></i> Equipos automatizados</li>
                                         <li><i class="fa fa-check-circle"></i> Personal especializado</li>
@@ -266,7 +244,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <ul class="services__details__feature">
+                                    <ul class="clinic-services__feature">
                                         <li><i class="fa fa-check-circle"></i> Toma de muestra indolora</li>
                                         <li><i class="fa fa-check-circle"></i> Resultados confiables</li>
                                         <li><i class="fa fa-check-circle"></i> Precios accesibles</li>
@@ -279,107 +257,107 @@
                     </div>
                 </div>
                 <div class="col-lg-4 order-lg-1">
-                    <div class="services__sidebar">
-                        <div class="services__accordion">
-                            <div class="services__title">
-                                <h4><i class="fa fa-medkit service-icon"></i> Todos los Servicios</h4>
+                    <div class="clinic-services__sidebar">
+                        <div class="clinic-services__accordion">
+                            <div class="clinic-services__sidebar-title">
+                                <h4><i class="fa fa-medkit clinic-service-icon"></i> Todos los Servicios</h4>
                             </div>
                             <div class="accordion" id="accordionExample">
                                 <!-- Laboratorio -->
                                 <div class="card">
-                                    <div class="card-heading active">
+                                    <div class="clinic-card-heading active">
                                         <a href="#" data-service="laboratorio">
-                                            <i class="fa fa-flask service-icon"></i> Laboratorio
+                                            <i class="fa fa-flask clinic-service-icon"></i> Laboratorio
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Consulta Medicina General -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="consulta-general">
-                                            <i class="fa fa-user-md service-icon"></i> Consulta Medicina General
+                                            <i class="fa fa-user-md clinic-service-icon"></i> Consulta Medicina General
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Consulta Especialidades -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="consulta-especialidades">
-                                            <i class="fa fa-stethoscope service-icon"></i> Consulta Medicina Especialidades
+                                            <i class="fa fa-stethoscope clinic-service-icon"></i> Consulta Medicina Especialidades
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Rayos X -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="rayos-x">
-                                            <i class="fa fa-bolt service-icon"></i> Rayos X
+                                            <i class="fa fa-bolt clinic-service-icon"></i> Rayos X
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Ecografía -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="ecografia">
-                                            <i class="fa fa-heartbeat service-icon"></i> Ecografía
+                                            <i class="fa fa-heartbeat clinic-service-icon"></i> Ecografía
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Psicología -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="psicologia">
-                                            <i class="fa fa-comments service-icon"></i> Psicología
+                                            <i class="fa fa-comments clinic-service-icon"></i> Psicología
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Gastroenterología -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="gastroenterologia">
-                                            <i class="fa fa-medkit service-icon"></i> Consulta Gastroenterología
+                                            <i class="fa fa-medkit clinic-service-icon"></i> Consulta Gastroenterología
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Endoscopia -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="endoscopia">
-                                            <i class="fa fa-camera service-icon"></i> Endoscopia
+                                            <i class="fa fa-camera clinic-service-icon"></i> Endoscopia
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Colonoscopia -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="colonoscopia">
-                                            <i class="fa fa-search service-icon"></i> Colonoscopia
+                                            <i class="fa fa-search clinic-service-icon"></i> Colonoscopia
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Proctoscopia -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="proctoscopia">
-                                            <i class="fa fa-search service-icon"></i> Proctoscopia
+                                            <i class="fa fa-search clinic-service-icon"></i> Proctoscopia
                                         </a>
                                     </div>
                                 </div>
 
                                 <!-- Otros -->
                                 <div class="card">
-                                    <div class="card-heading">
+                                    <div class="clinic-card-heading">
                                         <a href="#" data-service="otros">
-                                            <i class="fa fa-plus-circle service-icon"></i> Otros
+                                            <i class="fa fa-plus-circle clinic-service-icon"></i> Otros
                                         </a>
                                     </div>
                                 </div>
@@ -393,17 +371,17 @@
     <!-- Services Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="footer__top">
+    <footer class="clinic-footer">
+        <div class="clinic-footer__top">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
-                        <div class="footer__logo">
+                        <div class="clinic-footer__logo">
                             <a href="#"><img src="img/logor.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8">
-    <div class="footer__newslatter">
+    <div class="clinic-footer__newsletter">
         <form action="./contact.html#formularioConsulta">
             <input type="text" placeholder="Consultas">
             <button type="submit" class="site-btn">Contactarse</button>
@@ -412,7 +390,7 @@
 </div>
            
                     <div class="col-lg-4 col-md-12">
-                        <div class="footer__social">
+                        <div class="clinic-footer__social">
                              <a href="https://www.facebook.com/VraemClinicaEspecializada" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
                                 <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i></a>
                                  <a href="./contact.html#formularioConsulta"><i class="fa fa-question-circle"></i></a>
@@ -424,7 +402,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
+                    <div class="clinic-footer__widget">
                         <h5>Clinica Vraem</h5>
                         <ul>
                             <li><a href="#">Nosotros</a></li>
@@ -436,7 +414,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
+                    <div class="clinic-footer__widget">
                         <h5>Nuestros Servicios</h5>
                         <ul>
                             <li><a href="#">Gastroenterología</a></li>
@@ -448,7 +426,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__address">
+                    <div class="clinic-footer__address">
                         <h5>Contactanos</h5>
                         <ul>
                             <li><i class="fa fa-map-marker"></i> Av. San Martin N° 871, Huanta</li>
@@ -458,7 +436,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-6">
-                    <div class="footer__map">
+                    <div class="clinic-footer__map">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!4v1759619099261!6m8!1m7!1sZmWTAzexB7ZtZ9uFX56PAg!2m2!1d-12.9460415853329!2d-74.24293245327512!3f137.42006!4f0!5f0.7820865974627469" 
                             height="190" 
@@ -471,11 +449,11 @@
                 </div>
             </div>
         </div>
-        <div class="footer__copyright">
+        <div class="clinic-footer__copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <div class="footer__copyright__text">
+                        <div class="clinic-footer__copyright-text">
                             <p>
                                 © <script>document.write(new Date().getFullYear());</script> 
                                 <strong>Clínica Especializada VRAEM</strong>. Todos los derechos reservados.<br>
@@ -709,11 +687,11 @@
                 
                 // Remover clase active de todos los enlaces
                 serviceLinks.forEach(l => {
-                    l.closest('.card-heading').classList.remove('active');
+                    l.closest('.clinic-card-heading').classList.remove('active');
                 });
                 
                 // Agregar clase active al enlace clickeado
-                this.closest('.card-heading').classList.add('active');
+                this.closest('.clinic-card-heading').classList.add('active');
                 
                 const serviceId = this.getAttribute('data-service');
                 const service = allServices[serviceId];
@@ -722,7 +700,7 @@
                     updateServiceDetails(service);
                     
                     // Scroll suave a la sección de detalles
-                    document.querySelector('.services__details').scrollIntoView({
+                    document.querySelector('.clinic-services__details').scrollIntoView({
                         behavior: 'smooth'
                     });
                 } else {
@@ -735,23 +713,23 @@
         function updateServiceDetails(service) {
             try {
                 // Actualizar información básica
-                const titleElement = document.querySelector('.services__details__title h3');
-                const categoryElement = document.querySelector('.services__details__title span');
-                const priceElement = document.querySelector('.services__details__widget h3');
+                const titleElement = document.querySelector('.clinic-services__title h3');
+                const categoryElement = document.querySelector('.clinic-services__title span');
+                const priceElement = document.querySelector('.clinic-services__widget h3');
                 
                 if (titleElement) titleElement.textContent = service.title;
                 if (categoryElement) categoryElement.textContent = service.category;
                 if (priceElement) priceElement.textContent = service.price;
                 
                 // Actualizar imagen principal
-                const mainImage = document.querySelector('.services__details__pic img');
+                const mainImage = document.querySelector('.clinic-services__pic img');
                 if (mainImage && service.mainImage) {
                     mainImage.src = service.mainImage;
                     mainImage.alt = service.title;
                 }
                 
                 // Actualizar descripción
-                const descriptionElements = document.querySelectorAll('.services__details__text p');
+                const descriptionElements = document.querySelectorAll('.clinic-services__text p');
                 if (descriptionElements.length > 0) {
                     descriptionElements[0].textContent = service.description;
                     if (descriptionElements.length > 1) {
@@ -760,7 +738,7 @@
                 }
                 
                 // Actualizar detalles del servicio
-                const detailsElement = document.querySelector('.service-details');
+                const detailsElement = document.querySelector('.clinic-service-details');
                 if (detailsElement) {
                     const details = service.details || '';
                     detailsElement.innerHTML = `
@@ -773,14 +751,14 @@
                 }
                 
                 // Actualizar galería de equipos
-                const galleryContainer = document.querySelector('.equipment-gallery');
+                const galleryContainer = document.querySelector('.clinic-equipment-gallery');
                 if (galleryContainer && service.equipment) {
                     galleryContainer.innerHTML = `
                         <h4>Equipos y Tecnología</h4>
                         <div class="row">
                             ${service.equipment.map((img, index) => `
                                 <div class="col-sm-4">
-                                    <div class="services__details__item__pic">
+                                    <div class="clinic-services__item__pic">
                                         <img src="${img}" alt="${service.equipmentDesc?.[index] || 'Equipo especializado'}">
                                         <p>${service.equipmentDesc?.[index] || 'Equipo especializado'}</p>
                                     </div>
@@ -805,20 +783,20 @@
             
             // Crear y mostrar nuevo mensaje de error
             const errorDiv = document.createElement('div');
-            errorDiv.className = 'service-error';
+            errorDiv.className = 'clinic-service-error';
             errorDiv.innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
                 <strong>Error:</strong> ${message}
             `;
             
-            const servicesDetails = document.querySelector('.services__details');
+            const servicesDetails = document.querySelector('.clinic-services__details');
             if (servicesDetails) {
                 servicesDetails.insertBefore(errorDiv, servicesDetails.firstChild);
             }
         }
 
         function hideServiceError() {
-            const existingError = document.querySelector('.service-error');
+            const existingError = document.querySelector('.clinic-service-error');
             if (existingError) {
                 existingError.remove();
             }
