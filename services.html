@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Clínica VRAEM - Servicios de Laboratorio">
-    <meta name="keywords" content="clínica, laboratorio, análisis, salud, VRAEM">
+    <meta name="description" content="Clínica VRAEM - Servicios de Laboratorio y Especialidades Médicas">
+    <meta name="keywords" content="clínica, laboratorio, análisis, salud, VRAEM, Huanta, medicina">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clínica VRAEM | Servicios</title>
@@ -13,16 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
     <link rel="stylesheet" href="css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/estilos-principal.css" type="text/css">
+    
     <style>
         .clinic-equipment-gallery {
             margin-top: 30px;
@@ -66,7 +68,8 @@
         }
         .clinic-card-heading a::after {
             content: '\f105';
-            font-family: 'FontAwesome';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
             position: absolute;
             right: 15px;
             top: 50%;
@@ -77,6 +80,23 @@
             content: '\f101';
             transform: translateY(-50%) rotate(0deg);
         }
+        .map-placeholder {
+            background: #f8f9fa;
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: 2px dashed #dee2e6;
+        }
+        .map-placeholder a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 500;
+        }
+        .map-placeholder a:hover {
+            color: #2980b9;
+        }
     </style>
 </head>
 
@@ -85,8 +105,6 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
-  
 
      <!-- Header Section Begin -->
     <header class="clinic-header">
@@ -100,8 +118,6 @@
                             <li><i class="fa fa-clock-o"></i>Lunes a Domingo 7:00am a 8:00pm/emer-24 Horas</li>
                         </ul>
                     </div>
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
                     <div class="col-lg-4">
                         <div class="clinic-topbar__right">
@@ -109,7 +125,7 @@
                                 rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i
                                     class="fab fa-whatsapp"></i></a>
-                            <a href="./contact.html#formularioConsulta"><i class="fas fa-question-circle"></i></a>
+                            <a href="./contact.html#clinic-formulario-consulta"><i class="fas fa-question-circle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +156,7 @@
                             </ul>
                         </nav>
                         <div class="clinic-header__btn">
-                            <a href="./contact.html#formularioConsulta" class="primary-btn">Consultas</a>
+                            <a href="./contact.html#clinic-formulario-consulta" class="primary-btn">Consultas</a>
                         </div>
                     </div>
                 </div>
@@ -223,11 +239,16 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="clinic-services__item__pic">
-                                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop" alt="Microscopios">
+                                        <img src="img/micro.jpg" alt="Microscopios">
                                         <p>Microscopios de alta resolución</p>
                                     </div>
                                 </div>
-                              
+                                <div class="col-sm-4">
+                                    <div class="clinic-services__item__pic">
+                                        <img src="img/centrifuga.jpg" alt="Centrífugas">
+                                        <p>Centrífugas y equipos de procesamiento</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -379,7 +400,7 @@
                     </div>
                     <div class="col-lg-4 col-md-8">
     <div class="clinic-footer__newsletter">
-        <form action="./contact.html#formularioConsulta">
+        <form action="./contact.html#clinic-formulario-consulta">
             <input type="text" placeholder="Consultas">
             <button type="submit" class="site-btn">Contactarse</button>
         </form>
@@ -388,9 +409,9 @@
            
                     <div class="col-lg-4 col-md-12">
                         <div class="clinic-footer__social">
-                             <a href="https://www.facebook.com/VraemClinicaEspecializada" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
-                                <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i></a>
-                                 <a href="./contact.html#formularioConsulta"><i class="fa fa-question-circle"></i></a>
+                             <a href="https://www.facebook.com/VraemClinicaEspecializada" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://wa.me/51952289392" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                                 <a href="./contact.html#clinic-formulario-consulta"><i class="fas fa-question-circle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -402,11 +423,11 @@
                     <div class="clinic-footer__widget">
                         <h5>Clinica Vraem</h5>
                         <ul>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Equipos</a></li>
-                            <li><a href="#">Staff Medico</a></li>
-                            <li><a href="#">Contacto</a></li>
-                            <li><a href="#">Servicios</a></li>
+                            <li><a href="./about.html">Nosotros</a></li>
+                            <li><a href="./pricing.html">Equipos</a></li>
+                            <li><a href="./doctor.html">Staff Medico</a></li>
+                            <li><a href="./contact.html">Contacto</a></li>
+                            <li><a href="./services.html">Servicios</a></li>
                         </ul>
                     </div>
                 </div>
@@ -414,11 +435,11 @@
                     <div class="clinic-footer__widget">
                         <h5>Nuestros Servicios</h5>
                         <ul>
-                            <li><a href="#">Gastroenterología</a></li>
-                            <li><a href="#">Traumatología</a></li>
-                            <li><a href="#">Urología</a></li>
-                            <li><a href="#">Ginecología</a></li>
-                            <li><a href="#">Laboratorio Clínico</a></li>
+                            <li><a href="./services.html">Gastroenterología</a></li>
+                            <li><a href="./services.html">Traumatología</a></li>
+                            <li><a href="./services.html">Urología</a></li>
+                            <li><a href="./services.html">Ginecología</a></li>
+                            <li><a href="./services.html">Laboratorio Clínico</a></li>
                         </ul>
                     </div>
                 </div>
@@ -427,21 +448,19 @@
                         <h5>Contactanos</h5>
                         <ul>
                             <li><i class="fa fa-map-marker"></i> Av. San Martin N° 871, Huanta</li>
-                            <li><i class="fa fa-phone"></i> 995 992 426</li>
+                            <li><i class="fa fa-phone"></i> 952 289 392</li>
                             <li><i class="fa fa-envelope"></i> clinicavraem@gmail.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-6">
                     <div class="clinic-footer__map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!4v1759619099261!6m8!1m7!1sZmWTAzexB7ZtZ9uFX56PAg!2m2!1d-12.9460415853329!2d-74.24293245327512!3f137.42006!4f0!5f0.7820865974627469" 
-                            height="190" 
-                            style="border:0; width:100%;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <div class="map-placeholder">
+                            <a href="https://maps.google.com/?q=Av.+San+Martin+N°+871,+Huanta" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-map-marker-alt fa-2x"></i><br>
+                                Ver ubicación en Google Maps
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -460,9 +479,9 @@
                     </div>
                     <div class="col-lg-5">
                         <ul style="list-style: none; display: flex; gap: 15px; justify-content: flex-end; padding: 0; margin: 0;">
-                            <li><a href="#" style="text-decoration: none; color: inherit;">Aviso Legal</a></li>
-                            <li><a href="#" style="text-decoration: none; color: inherit;">Términos de Uso</a></li>
-                            <li><a href="#" style="text-decoration: none; color: inherit;">Política de Privacidad</a></li>
+                            <li><a href="./legal.html" style="text-decoration: none; color: inherit;">Aviso Legal</a></li>
+                            <li><a href="./terms.html" style="text-decoration: none; color: inherit;">Términos de Uso</a></li>
+                            <li><a href="./privacy.html" style="text-decoration: none; color: inherit;">Política de Privacidad</a></li>
                         </ul>
                     </div>
                 </div>
@@ -494,12 +513,14 @@
                 description: 'Servicios completos de laboratorio clínico con análisis hematológicos, bioquímicos, microbiología y más. Contamos con tecnología de última generación para resultados precisos y confiables.',
                 mainImage: 'img/labo.jpg',
                 equipment: [
-                    'https://images.unsplash.com/photo-1581093458791-8a0a1edb6b8a?w=300&h=200&fit=crop',
-                    'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop',
+                    'img/analisador.jpg',
+                    'img/micro.jpg',
+                    'img/centrifuga.jpg'
                 ],
                 equipmentDesc: [
                     'Analizadores hematológicos automatizados',
                     'Microscopios de alta resolución',
+                    'Centrífugas y equipos de procesamiento'
                 ],
                 details: 'Realizamos más de 100 tipos de análisis diferentes. Tiempo de entrega variable según el estudio. Muestras: sangre, orina, heces, etc.'
             },
@@ -513,7 +534,7 @@
                 mainImage: 'img/medi.jpg',
                 equipment: [
                     'img/medi2.jpg',
-                    'img/medi 3.jpg'
+                    'img/medi3.jpg'
                 ],
                 equipmentDesc: [
                     'Equipos de diagnóstico general',
@@ -525,7 +546,7 @@
             // ========== CONSULTA ESPECIALIDADES ==========
             'consulta-especialidades': { 
                 title: 'Consulta Medicina Especialidades', 
-                price: 'Consulta', 
+                price: 'Consultar', 
                 category: 'ESPECIALIDADES MÉDICAS', 
                 description: 'Atención especializada con médicos en diversas áreas: cardiología, dermatología, pediatría, ginecología, traumatología y más.',
                 mainImage: 'img/espe1.jpg',
@@ -541,13 +562,13 @@
             // ========== RAYOS X ==========
             'rayos-x': { 
                 title: 'Rayos X', 
-                price: 'Consulta', 
+                price: 'Consultar', 
                 category: 'IMAGENOLOGÍA', 
                 description: 'Servicio de radiografía digital para diagnóstico de fracturas, enfermedades pulmonares, estudios óseos y más. Tecnología digital de alta resolución.',
                 mainImage: 'img/rayos1.jpg',
                 equipment: [
                     'img/rayos2.jpg',
-                    'img/espe2.jpeg'
+                    'img/rayos3.jpg'
                 ],
                 equipmentDesc: [
                     'Equipo de rayos X digital',
@@ -559,15 +580,16 @@
             // ========== ECOGRAFÍA ==========
             'ecografia': { 
                 title: 'Ecografía', 
-                price: 'Consulta', 
+                price: 'Consultar', 
                 category: 'IMAGENOLOGÍA', 
                 description: 'Estudios ecográficos con equipos de última generación. Ecografías abdominales, obstétricas, ginecológicas, de partes blandas y doppler vascular.',
                 mainImage: 'img/eco1.jpeg',
                 equipment: [
-                
-                    'img/eco2.jpg'
+                    'img/eco2.jpg',
+                    'img/eco3.jpg'
                 ],
                 equipmentDesc: [
+                    'Ecógrafo digital con doppler color',
                     'Transductores multifrecuencia'
                 ],
                 details: 'Duración: 20-40 minutos. Algunos estudios requieren ayuno. Resultados inmediatos con informe escrito.'
@@ -576,7 +598,7 @@
             // ========== PSICOLOGÍA ==========
             'psicologia': { 
                 title: 'Psicología', 
-                price: 'Consulta', 
+                price: 'Consultar', 
                 category: 'SALUD MENTAL', 
                 description: 'Atención psicológica profesional para niños, adolescentes y adultos. Terapia individual, familiar y de pareja. Manejo de ansiedad, depresión y problemas de adaptación.',
                 mainImage: 'img/sico1.jpg',
@@ -593,12 +615,12 @@
             // ========== GASTROENTEROLOGÍA ==========
             'gastroenterologia': { 
                 title: 'Consulta Gastroenterología', 
-                price: 'Consulta', 
+                price: 'Consultar', 
                 category: 'GASTROENTEROLOGÍA', 
                 description: 'Atención especializada en enfermedades del sistema digestivo. Diagnóstico y tratamiento de problemas gástricos, hepáticos, intestinales y pancreáticos.',
-                mainImage: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=400&fit=crop',
+                mainImage: 'img/gastro1.jpg',
                 equipment: [
-                    'img/gastro1.jpg'
+                    'img/gastro2.jpg'
                 ],
                 equipmentDesc: [
                     'Equipos de diagnóstico gastroenterológico'
@@ -609,15 +631,15 @@
             // ========== ENDOSCOPÍA ==========
             'endoscopia': { 
                 title: 'Endoscopia', 
-                price: 'Consulta', 
+                price: 'Consultar', 
                 category: 'ENDOSCOPÍA', 
                 description: 'Estudio endoscópico del tracto digestivo superior. Visualización directa de esófago, estómago y duodeno para diagnóstico de úlceras, gastritis y tumores.',
                 mainImage: 'img/endo1.jpg',
                 equipment: [
-                    'img/endo2.jpg',
+                    'img/endo2.jpg'
                 ],
                 equipmentDesc: [
-                    'Videoendoscopio de alta definición',
+                    'Videoendoscopio de alta definición'
                 ],
                 details: 'Duración: 20-30 minutos. Ayuno de 8 horas requerido. Sedación consciente incluida.'
             },
@@ -625,7 +647,7 @@
             // ========== COLONOSCOPÍA ==========
             'colonoscopia': { 
                 title: 'Colonoscopia', 
-                price: 'Consulta', 
+                price: 'Consultar', 
                 category: 'ENDOSCOPÍA', 
                 description: 'Exploración completa del colon y recto para diagnóstico de pólipos, cáncer colorectal, enfermedad inflamatoria intestinal y otras patologías.',
                 mainImage: 'img/colo1.jpg',
@@ -641,7 +663,7 @@
             // ========== PROCTOSCOPÍA ==========
             'proctoscopia': { 
                 title: 'Proctoscopia', 
-                price: 'Consulta', 
+                price: 'Consultar', 
                 category: 'PROCTOLOGÍA', 
                 description: 'Examen del recto y canal anal para diagnóstico de hemorroides, fisuras anales, pólipos y otras patologías anorrectales.',
                 mainImage: 'img/procto1.jpg',
@@ -662,7 +684,7 @@
                 description: 'Contamos con otros servicios médicos especializados. Consulte por disponibilidad de otros procedimientos y especialidades.',
                 mainImage: 'img/otros1.jpg',
                 equipment: [
-                    'img/endo2.jpg'
+                    'img/otros2.jpg'
                 ],
                 equipmentDesc: [
                     'Equipos especializados según servicio'

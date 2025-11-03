@@ -1,11 +1,7 @@
-/*  ---------------------------------------------------
-    Templater Name: Aesthetic
-    Description: Aesthetic medical template
-    Author: Colorib
-    Author URI: https://colorlib.com/
-    Version: 1.0
-    Created: Colorib
----------------------------------------------------------  */
+/* ---------------------------------------------------
+    Clínica VRAEM - Sistema de JavaScript
+    Desarrollado para Clínica Especializada VRAEM
+--------------------------------------------------------- */
 
 'use strict';
 
@@ -63,8 +59,8 @@
     $(".header__menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true,
-        'closedSymbol': '<i class="fa fa-angle-right"></i>', // Character after collapsed parents.
-        'openedSymbol': '<i class="fa fa-angle-up"></i>', // Character after expanded parents.
+        'closedSymbol': '<i class="fa fa-angle-right"></i>',
+        'openedSymbol': '<i class="fa fa-angle-up"></i>',
     });
 
     /*--------------------------
